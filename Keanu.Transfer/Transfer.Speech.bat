@@ -1,0 +1,1 @@
+cscript //nologo K:\Keanu.Speech.Engine.Reply.Temp.vbs&del K:\Keanu.Speech.Engine.Reply.Temp.vbs

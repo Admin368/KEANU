@@ -1,0 +1,313 @@
+ 7720 : 5552 2019-10-16 23: 5:41 686 :  0:	daemon.exe started
+ 7720 :11296 2019-10-16 23: 5:41 702 :  0:	starting service
+ 7720 : 5552 2019-10-16 23: 6:44  39 :  0:	stopping service
+ 5340 :10016 2019-10-16 23: 6:47 213 :  0:	KSetup::Install:err
+ 5340 :10016 2019-10-16 23: 6:49 921 :  0:	KSetup::Stop:err
+ 3968 :  820 2019-10-16 23: 6:51 583 :  0:	daemon.exe started
+ 3968 : 7980 2019-10-16 23: 6:51 597 :  0:	starting service
+ 3968 : 7980 2019-10-16 23: 7: 8 246 :  0:	KTS connected to 192.168.1.168:60561
+ 2524 :11772 2019-10-16 23: 7:10 178 :  0:	session.exe started 
+ 2524 :11772 2019-10-16 23: 7:10 282 :  0:	connected to 192.168.1.168:60561
+ 2524 : 8152 2019-10-16 23: 7:19 386 :  0:	login accepted: [ admin68 ]
+ 3968 :  820 2019-10-16 23: 7:50 440 :  0:	stopping service
+ 2524 :10700 2019-10-16 23: 7:51 242 :  0:	KTS service stopped
+ 8632 : 5864 2019-10-16 23: 7:51 864 :  0:	daemon.exe started
+ 8632 :11984 2019-10-16 23: 7:51 997 :  0:	starting service
+ 2524 :10700 2019-10-16 23: 7:52 255 :  0:	shutdown
+ 2524 : 7276 2019-10-16 23: 7:52 269 :  0:	session.exe end
+ 8632 :11984 2019-10-16 23: 7:57 586 :  0:	KTS connected to 192.168.1.168:60659
+12264 : 5228 2019-10-16 23: 7:57 879 :  0:	session.exe started 
+12264 : 5228 2019-10-16 23: 7:57 999 :  0:	connected to 192.168.1.168:60659
+12264 : 4360 2019-10-16 23: 8: 0 553 :  0:	login accepted: [ admin68 ]
+12264 : 6156 2019-10-16 23: 8: 9 907 :  0:	disconnected
+ 8632 :11984 2019-10-16 23: 8:23 931 :  0:	KTS connected to 192.168.1.168:60714
+ 5524 :11628 2019-10-16 23: 8:24 235 :  0:	session.exe started 
+ 5524 :11628 2019-10-16 23: 8:24 345 :  0:	connected to 192.168.1.168:60714
+ 5524 :11024 2019-10-16 23: 8:26 901 :  0:	login accepted: [ admin68 ]
+ 5524 :11628 2019-10-16 23: 8:28 904 :  0:	disconnecting
+ 5524 :11628 2019-10-16 23: 8:28 918 :  0:	shutdown session
+ 5524 : 7520 2019-10-16 23: 8:28 933 :  0:	session.exe end
+12264 : 6156 2019-10-16 23: 8:29 947 :  0:	disconnected
+ 8632 : 5864 2019-10-16 23: 8:30 764 :  0:	stopping service
+12264 : 6156 2019-10-16 23: 8:30 962 :  0:	KTS service stopped
+12264 : 6156 2019-10-16 23: 8:31 976 :  0:	shutdown
+12264 : 7212 2019-10-16 23: 8:31 992 :  0:	session.exe end
+ 3264 : 3528 2019-10-16 23: 8:33 210 :  0:	daemon.exe started
+ 3264 : 9568 2019-10-16 23: 8:33 227 :  0:	starting service
+ 3264 : 3528 2019-10-16 23: 8:35 838 :  0:	stopping service
+ 5552 :10264 2019-10-16 23: 8:39 751 :  0:	daemon.exe started
+ 5552 : 7276 2019-10-16 23: 8:39 768 :  0:	starting service
+ 5552 : 7276 2019-10-16 23: 8:57 969 :  0:	KTS connected to 192.168.1.168:60783
+ 6320 : 2728 2019-10-16 23: 8:58 277 :  0:	session.exe started 
+ 6320 : 2728 2019-10-16 23: 8:58 394 :  0:	connected to 192.168.1.168:60783
+ 6320 : 4840 2019-10-16 23: 9: 0 954 :  0:	login accepted: [ admin68 ]
+ 6320 : 7984 2019-10-16 23: 9:20 325 :  0:	disconnected
+ 5552 :10264 2019-10-16 23: 9:49 420 :  0:	stopping service
+ 6320 : 7984 2019-10-16 23: 9:50 374 :  0:	KTS service stopped
+ 6320 : 7984 2019-10-16 23: 9:51 389 :  0:	shutdown
+ 6320 : 6868 2019-10-16 23: 9:51 405 :  0:	session.exe end
+ 3148 : 5204 2019-10-16 23: 9:53 249 :  0:	daemon.exe started
+ 3148 : 6700 2019-10-16 23: 9:53 266 :  0:	starting service
+ 3148 : 5204 2019-10-16 23: 9:57 268 :  0:	stopping service
+ 6988 : 5196 2019-10-16 23:10: 3 312 :  0:	daemon.exe started
+ 6988 :10972 2019-10-16 23:10: 3 329 :  0:	starting service
+ 6988 :10972 2019-10-16 23:10:29 317 :  0:	KTS connected to 169.254.127.46:60978
+ 4844 : 7772 2019-10-16 23:10:29 634 :  0:	session.exe started 
+ 4844 : 7772 2019-10-16 23:10:29 741 :  0:	connected to 169.254.127.46:60978
+ 4844 :11516 2019-10-16 23:10:32 396 :  0:	login accepted: [ admin68 ]
+ 4844 :12036 2019-10-16 23:11:12 707 :  0:	disconnected
+ 6988 :10972 2019-10-16 23:13:21 446 :  0:	KTS connected to 192.168.1.169:63538
+ 4120 : 5680 2019-10-16 23:13:21 768 :  0:	session.exe started 
+ 4120 : 5680 2019-10-16 23:13:21 888 :  0:	connected to 192.168.1.169:63538
+ 4120 : 2256 2019-10-16 23:13:24 983 :  0:	login accepted: [ admin68 ]
+ 4120 : 5680 2019-10-16 23:14:21 570 :  0:	disconnecting
+ 4120 : 5680 2019-10-16 23:14:21 586 :  0:	shutdown session
+ 4120 : 2512 2019-10-16 23:14:21 603 :  0:	session.exe end
+ 4844 :12036 2019-10-16 23:14:21 979 :  0:	disconnected
+ 6988 : 5196 2019-10-16 23:14:43 535 :  0:	stopping service
+ 4844 :12036 2019-10-16 23:14:44 198 :  0:	KTS service stopped
+ 4844 :12036 2019-10-16 23:14:45 214 :  0:	shutdown
+ 4844 : 6332 2019-10-16 23:14:45 236 :  0:	session.exe end
+ 5628 : 7252 2019-10-16 23:16:55 569 :  0:	KSetup::Stop:err
+ 5628 : 7252 2019-10-16 23:16:57 800 :  0:	KSetup::Uninstall:err
+10888 : 9360 2019-10-17  2:59:38 237 :  0:	KSetup::Stop:err
+10888 : 9360 2019-10-17  2:59:39 964 :  0:	KSetup::Uninstall:err
+10888 : 9360 2019-10-17  2:59:43 719 :  0:	KSetup::Stop:err
+10888 : 9360 2019-10-17  3: 0: 2 603 :  0:	KSetup::Install:err
+ 7240 : 4004 2019-10-17  3: 0: 9 744 :  0:	daemon.exe started
+ 7240 : 4068 2019-10-17  3: 0: 9 759 :  0:	starting service
+ 7240 : 4068 2019-10-17  3: 0:12 507 :  0:	KTS connected to 192.168.1.168:64900
+11848 : 8104 2019-10-17  3: 0:14 389 :  0:	session.exe started 
+11848 : 8104 2019-10-17  3: 0:14 520 :  0:	connected to 192.168.1.168:64900
+11848 : 9440 2019-10-17  3: 0:17 226 :  0:	login accepted: [ admin68 ]
+11848 : 9440 2019-10-17  3: 0:17 238 :  0:	access denied to subsystem [terminal] for user Admin68
+11848 : 9132 2019-10-17  3: 0:17 242 :  0:	session.exe end
+ 7240 : 4068 2019-10-17  3: 0:45  93 :  0:	KTS connected to 192.168.1.168:64910
+11332 : 9516 2019-10-17  3: 0:45 456 :  0:	session.exe started 
+11332 : 9516 2019-10-17  3: 0:45 578 :  0:	connected to 192.168.1.168:64910
+11332 : 6240 2019-10-17  3: 0:48 227 :  0:	login accepted: [ admin68 ]
+11332 : 6240 2019-10-17  3: 0:48 242 :  0:	access denied to subsystem [terminal] for user Admin68
+11332 :12136 2019-10-17  3: 0:48 256 :  0:	session.exe end
+ 7240 : 4004 2019-10-17  5:54:14 780 :  0:	stopping service
+ 4212 : 4216 2019-10-17  5:55:57 357 :  0:	daemon.exe started
+ 4212 : 4452 2019-10-17  5:55:57 372 :  0:	starting service
+ 4212 : 4216 2019-10-17  6:24:55 944 :  0:	stopping service
+ 4452 : 4456 2019-10-17  6:26:40 359 :  0:	daemon.exe started
+ 4452 : 4196 2019-10-17  6:26:40 422 :  0:	starting service
+ 4452 : 4456 2019-10-17  8: 2:32 675 :  0:	stopping service
+ 8308 : 6252 2019-10-17  8: 2:40 163 :  0:	daemon.exe started
+ 8308 : 3712 2019-10-17  8: 2:40 182 :  0:	starting service
+ 8308 : 6252 2019-10-17  8: 4:22 800 :  0:	stopping service
+ 6428 : 8624 2019-10-17  8: 4:26 960 :  0:	daemon.exe started
+ 6428 : 3528 2019-10-17  8: 4:26 978 :  0:	starting service
+ 6428 : 3528 2019-10-17  8: 5:39 128 :  0:	KTS connected to 169.254.127.46:62933
+ 4932 :   80 2019-10-17  8: 5:41 277 :  0:	session.exe started 
+ 4932 :   80 2019-10-17  8: 5:41 406 :  0:	connected to 169.254.127.46:62933
+ 4932 :   80 2019-10-17  8: 5:42 517 :  0:	ssh initialized
+ 4932 :   80 2019-10-17  8: 5:43   8 :  0:	can't read login
+ 4932 :   80 2019-10-17  8: 5:43 337 :  0:	ssh info: WSAECONNRESET: Connection was reset by the remote host executing a close
+ 4932 : 4536 2019-10-17  8: 5:43 357 :  0:	session.exe end
+ 6428 : 3528 2019-10-17  8:13:26 786 :  0:	KTS connected to 169.254.127.46:63055
+ 6832 : 5272 2019-10-17  8:13:27 390 :  0:	session.exe started 
+ 6832 : 5272 2019-10-17  8:13:27 528 :  0:	connected to 169.254.127.46:63055
+ 6832 : 5272 2019-10-17  8:13:27 582 :  0:	ssh initialized
+ 6832 : 5272 2019-10-17  8:13:27 943 :  0:	can't read login
+ 6832 : 5272 2019-10-17  8:13:27 958 :  0:	ssh info: WSAECONNRESET: Connection was reset by the remote host executing a close
+ 6832 : 9516 2019-10-17  8:13:27 977 :  0:	session.exe end
+ 6428 : 8624 2019-10-17  8:15: 7 208 :  0:	stopping service
+ 8136 : 5896 2019-10-17  8:15:11 361 :  0:	daemon.exe started
+ 8136 : 8800 2019-10-17  8:15:11 380 :  0:	starting service
+ 8136 : 8800 2019-10-17  8:15:27 553 :  0:	KTS connected to 169.254.127.46:63096
+ 1616 : 4804 2019-10-17  8:15:27 865 :  0:	session.exe started 
+ 1616 : 4804 2019-10-17  8:15:28 204 :  0:	connected to 169.254.127.46:63096
+ 1616 : 4804 2019-10-17  8:15:28 239 :  0:	ssh initialized
+ 1616 : 4804 2019-10-17  8:15:28 601 :  0:	can't read login
+ 1616 : 4804 2019-10-17  8:15:28 618 :  0:	ssh info: WSAECONNRESET: Connection was reset by the remote host executing a close
+ 1616 : 2396 2019-10-17  8:15:28 637 :  0:	session.exe end
+ 8136 : 5896 2019-10-17  8:16:19 551 :  0:	stopping service
+11152 : 8628 2019-10-17  8:16:23 946 :  0:	daemon.exe started
+11152 : 5932 2019-10-17  8:16:23 966 :  0:	starting service
+11152 : 5932 2019-10-17  8:16:32 842 :  0:	KTS connected to 169.254.127.46:63107
+ 3940 : 5904 2019-10-17  8:16:33 160 :  0:	session.exe started 
+ 3940 : 5904 2019-10-17  8:16:33 275 :  0:	connected to 169.254.127.46:63107
+ 3940 :10760 2019-10-17  8:16:34 826 :  0:	login refused: [ JJ ] - The user name or password is incorrect.
+
+ 3940 :10760 2019-10-17  8:16:34 845 :  0:	login refused: [ JJ ] - The user name or password is incorrect.
+
+ 3940 :10760 2019-10-17  8:16:34 863 :  0:	login refused: [ JJ ] - The user name or password is incorrect.
+
+ 3940 :10760 2019-10-17  8:16:34 880 :  0:	max login attempts
+ 3940 : 3456 2019-10-17  8:16:34 898 :  0:	session.exe end
+11152 : 5932 2019-10-17  8:17:39 434 :  0:	KTS connected to 192.168.1.168:63118
+ 7408 :10696 2019-10-17  8:17:39 739 :  0:	session.exe started 
+ 7408 :10696 2019-10-17  8:17:39 868 :  0:	connected to 192.168.1.168:63118
+ 7408 : 2316 2019-10-17  8:17:42 264 :  0:	login refused: [ JJ ] - The user name or password is incorrect.
+
+ 7408 : 2316 2019-10-17  8:17:42 283 :  0:	login refused: [ JJ ] - The user name or password is incorrect.
+
+ 7408 : 2316 2019-10-17  8:17:42 303 :  0:	login refused: [ JJ ] - The user name or password is incorrect.
+
+ 7408 : 2316 2019-10-17  8:17:42 319 :  0:	max login attempts
+ 7408 : 6064 2019-10-17  8:17:42 345 :  0:	session.exe end
+11152 : 5932 2019-10-17  8:20: 0 142 :  0:	KTS connected to 192.168.1.168:63155
+ 9988 : 8704 2019-10-17  8:20: 0 488 :  0:	session.exe started 
+ 9988 : 8704 2019-10-17  8:20: 0 702 :  0:	connected to 192.168.1.168:63155
+ 9988 :11032 2019-10-17  8:20: 2 251 :  0:	login accepted: [ admin68 ]
+ 9988 :11032 2019-10-17  8:20: 2 268 :  0:	access denied to subsystem [terminal] for user Admin68
+ 9988 : 2772 2019-10-17  8:20: 2 287 :  0:	session.exe end
+11152 : 8628 2019-10-17  8:20: 7 432 :  0:	stopping service
+ 1620 : 6088 2019-10-17  8:20:14  40 :  0:	daemon.exe started
+ 1620 : 1700 2019-10-17  8:20:14  60 :  0:	starting service
+ 1620 : 1700 2019-10-17  8:20:17 405 :  0:	KTS connected to 192.168.1.168:63159
+ 7104 : 6080 2019-10-17  8:20:17 718 :  0:	session.exe started 
+ 7104 : 6080 2019-10-17  8:20:17 833 :  0:	connected to 192.168.1.168:63159
+ 7104 : 8548 2019-10-17  8:20:20 390 :  0:	login accepted: [ admin68 ]
+ 7104 : 8548 2019-10-17  8:20:20 404 :  0:	access denied to subsystem [terminal] for user Admin68
+ 7104 : 8300 2019-10-17  8:20:20 418 :  0:	session.exe end
+ 1620 : 6088 2019-10-17  8:20:40 744 :  0:	stopping service
+  200 : 9536 2019-10-17  8:20:44 928 :  0:	daemon.exe started
+  200 : 6208 2019-10-17  8:20:44 947 :  0:	starting service
+  200 : 6208 2019-10-17  8:21: 1 333 :  0:	KTS connected to 192.168.1.168:63161
+11012 : 5932 2019-10-17  8:21: 1 651 :  0:	session.exe started 
+11012 : 5932 2019-10-17  8:21: 1 766 :  0:	connected to 192.168.1.168:63161
+11012 : 9560 2019-10-17  8:21: 4 659 :  0:	login accepted: [ admin68 ]
+11012 : 9560 2019-10-17  8:21: 4 678 :  0:	access denied to subsystem [terminal] for user Admin68
+11012 : 9384 2019-10-17  8:21: 4 697 :  0:	session.exe end
+  200 : 6208 2019-10-17  8:22:52 294 :  0:	KTS connected to 192.168.1.168:63186
+ 9972 : 2316 2019-10-17  8:22:52 615 :  0:	session.exe started 
+ 9972 : 2316 2019-10-17  8:22:52 740 :  0:	connected to 192.168.1.168:63186
+ 9972 :10816 2019-10-17  8:22:55 873 :  0:	login accepted: [ admin68 ]
+ 9972 :10816 2019-10-17  8:22:55 892 :  0:	access denied to subsystem [terminal] for user Admin68
+ 9972 : 3528 2019-10-17  8:22:55 913 :  0:	session.exe end
+  200 : 9536 2019-10-17 10:58:49 858 :  0:	stopping service
+ 9976 :  512 2019-10-17 10:58:54 200 :  0:	KSetup::Install:err
+ 9976 :  512 2019-10-17 10:58:55 120 :  0:	KSetup::Install:err
+11412 : 2796 2019-10-17 10:59: 0 485 :  0:	daemon.exe started
+11412 : 2688 2019-10-17 10:59: 0 505 :  0:	starting service
+ 4124 : 4128 2019-10-19 16:37:46 545 :  0:	daemon.exe started
+ 4124 : 4384 2019-10-19 16:37:46 592 :  0:	starting service
+ 4124 : 4384 2019-10-20  3:29:49 817 :  0:	KTS connected to 192.168.1.106:52604
+ 2304 : 2932 2019-10-20  3:29:51 942 :  0:	session.exe started 
+ 2304 : 2932 2019-10-20  3:29:52   5 :  0:	connected to 192.168.1.106:52604
+ 2304 :  936 2019-10-20  3:29:55  52 :  0:	login accepted: [ admin68 ]
+ 2304 :  936 2019-10-20  3:29:55  83 :  0:	access denied to subsystem [terminal] for user Admin68
+ 2304 : 2932 2019-10-20  3:29:55 130 :  0:	shutdown session
+ 2304 : 5496 2019-10-20  3:29:55 411 :  0:	session.exe end
+ 4124 : 4384 2019-10-20  3:29:59 225 :  0:	KTS connected to 192.168.1.106:52636
+ 5932 : 1272 2019-10-20  3:29:59 521 :  0:	session.exe started 
+ 5932 : 1272 2019-10-20  3:29:59 646 :  0:	connected to 192.168.1.106:52636
+ 5932 : 1608 2019-10-20  3:30: 2 194 :  0:	login accepted: [ admin68 ]
+ 5932 : 1608 2019-10-20  3:30: 2 241 :  0:	access denied to subsystem [terminal] for user Admin68
+ 5932 : 1220 2019-10-20  3:30: 2 256 :  0:	session.exe end
+ 4124 : 4384 2019-10-20  3:30: 5 904 :  0:	KTS connected to 192.168.1.106:52638
+ 5152 : 1900 2019-10-20  3:30: 6 201 :  0:	session.exe started 
+ 5152 : 1900 2019-10-20  3:30: 6 232 :  0:	connected to 192.168.1.106:52638
+ 5152 : 5980 2019-10-20  3:30: 8 826 :  0:	login accepted: [ admin68 ]
+ 5152 : 5980 2019-10-20  3:30: 8 841 :  0:	access denied to subsystem [terminal] for user Admin68
+ 5152 : 3492 2019-10-20  3:30: 8 857 :  0:	session.exe end
+ 4124 : 4384 2019-10-20  3:30:12 201 :  0:	KTS connected to 192.168.1.106:52640
+ 5124 : 1664 2019-10-20  3:30:12 483 :  0:	session.exe started 
+ 5124 : 1664 2019-10-20  3:30:12 514 :  0:	connected to 192.168.1.106:52640
+ 5124 : 4352 2019-10-20  3:30:15 124 :  0:	login accepted: [ admin68 ]
+ 5124 : 4352 2019-10-20  3:30:15 139 :  0:	access denied to subsystem [terminal] for user Admin68
+ 5124 : 5268 2019-10-20  3:30:15 155 :  0:	session.exe end
+ 4124 : 4384 2019-10-20 22: 3:22 226 :  0:	KTS connected to 192.168.1.105:32774
+ 5104 : 4332 2019-10-20 22: 3:23 585 :  0:	session.exe started 
+ 5104 : 4332 2019-10-20 22: 3:23 773 :  0:	connected to 192.168.1.105:32774
+ 5104 : 5568 2019-10-20 22: 3:26 383 :  0:	login accepted: [ admin68 ]
+ 5104 : 5568 2019-10-20 22: 3:26 398 :  0:	access denied to subsystem [terminal] for user Admin68
+ 5104 : 3028 2019-10-20 22: 3:26 429 :  0:	session.exe end
+ 4124 : 4384 2019-10-21 14:24:18 529 :  0:	KTS connected to 192.168.1.103:38294
+11188 : 8460 2019-10-21 14:24:19 722 :  0:	session.exe started 
+11188 : 8460 2019-10-21 14:24:19 813 :  0:	connected to 192.168.1.103:38294
+11188 :10808 2019-10-21 14:24:22 522 :  0:	login accepted: [ admin68 ]
+11188 :10808 2019-10-21 14:24:22 541 :  0:	access denied to subsystem [terminal] for user Admin68
+11188 :11128 2019-10-21 14:24:22 570 :  0:	session.exe end
+ 4124 : 4384 2019-10-21 14:25:29 477 :  0:	KTS connected to 169.254.127.46:55371
+12156 :12160 2019-10-21 14:25:30 145 :  0:	session.exe started 
+12156 :12160 2019-10-21 14:25:30 255 :  0:	connected to 169.254.127.46:55371
+12156 :12236 2019-10-21 14:25:32 893 :  0:	login accepted: [ admin68 ]
+12156 :12236 2019-10-21 14:25:32 934 :  0:	access denied to subsystem [terminal] for user Admin68
+12156 :12256 2019-10-21 14:25:32 954 :  0:	session.exe end
+ 4124 : 4384 2019-10-21 14:25:58 851 :  0:	KTS connected to 192.168.1.103:38316
+11136 : 7308 2019-10-21 14:25:59 366 :  0:	session.exe started 
+11136 : 7308 2019-10-21 14:25:59 416 :  0:	connected to 192.168.1.103:38316
+11136 :11940 2019-10-21 14:26: 1 961 :  0:	login accepted: [ admin68 ]
+11136 :11940 2019-10-21 14:26: 1 973 :  0:	access denied to subsystem [terminal] for user Admin68
+11136 :11976 2019-10-21 14:26: 2 209 :  0:	session.exe end
+ 4124 : 4384 2019-10-21 14:26: 5 600 :  0:	KTS connected to 192.168.1.103:38322
+12224 :12228 2019-10-21 14:26: 5 850 :  0:	session.exe started 
+12224 :12228 2019-10-21 14:26: 5 892 :  0:	connected to 192.168.1.103:38322
+12224 :12184 2019-10-21 14:26: 8 334 :  0:	login accepted: [ admin68 ]
+12224 :12184 2019-10-21 14:26: 8 345 :  0:	access denied to subsystem [terminal] for user Admin68
+12224 :11388 2019-10-21 14:26: 8 362 :  0:	session.exe end
+ 4124 : 4384 2019-10-21 14:26:24 563 :  0:	KTS connected to 192.168.1.103:38328
+11584 :11300 2019-10-21 14:26:24 854 :  0:	session.exe started 
+11584 :11300 2019-10-21 14:26:24 893 :  0:	connected to 192.168.1.103:38328
+11584 :11276 2019-10-21 14:26:27 879 :  0:	login accepted: [ admin68 ]
+11584 :11276 2019-10-21 14:26:27 891 :  0:	access denied to subsystem [terminal] for user Admin68
+11584 :11976 2019-10-21 14:26:27 911 :  0:	session.exe end
+ 4124 : 4384 2019-10-21 14:26:47 794 :  0:	KTS connected to 192.168.1.103:38330
+ 3224 :11596 2019-10-21 14:26:49 555 :  0:	session.exe started 
+ 3224 :11596 2019-10-21 14:26:49 674 :  0:	connected to 192.168.1.103:38330
+ 3224 :11436 2019-10-21 14:26:52 187 :  0:	login accepted: [ admin68 ]
+ 3224 :11436 2019-10-21 14:26:52 225 :  0:	access denied to subsystem [terminal] for user Admin68
+ 3224 :11596 2019-10-21 14:26:52 235 :  0:	shutdown session
+ 3224 :11840 2019-10-21 14:26:52 369 :  0:	session.exe end
+ 4124 : 4128 2019-10-21 14:28:38 103 :  0:	stopping service
+11472 : 5392 2019-10-21 14:28:41 169 :  0:	daemon.exe started
+11472 : 4116 2019-10-21 14:28:41 186 :  0:	starting service
+11472 : 5392 2019-10-21 14:29: 7 886 :  0:	stopping service
+ 8796 :10380 2019-10-21 14:29:17 449 :  0:	daemon.exe started
+ 8796 : 4444 2019-10-21 14:29:17 471 :  0:	starting service
+ 8796 : 4444 2019-10-21 14:29:42 372 :  0:	KTS connected to 192.168.1.170:55695
+11956 :12284 2019-10-21 14:29:42 699 :  0:	session.exe started 
+11956 :12284 2019-10-21 14:29:42 804 :  0:	connected to 192.168.1.170:55695
+11956 :11472 2019-10-21 14:29:45 175 :  0:	login refused: [ Original ] - The user name or password is incorrect.
+
+11956 :11472 2019-10-21 14:29:45 268 :  0:	login refused: [ Original ] - The user name or password is incorrect.
+
+11956 :11472 2019-10-21 14:29:45 288 :  0:	login refused: [ Original ] - The user name or password is incorrect.
+
+11956 :11472 2019-10-21 14:29:45 305 :  0:	max login attempts
+11956 :11716 2019-10-21 14:29:45 326 :  0:	session.exe end
+ 8796 :10380 2019-10-22 16: 3:58 189 :  0:	stopping service
+ 3252 : 3256 2019-10-22 16: 9:38  39 :  0:	daemon.exe started
+ 3252 : 3716 2019-10-22 16: 9:38  86 :  0:	starting service
+ 3252 : 3716 2019-10-22 18:19:21 409 :  0:	KTS connected to 192.168.1.168:58080
+10940 :  416 2019-10-22 18:19:24 910 :  0:	session.exe started 
+10940 :  416 2019-10-22 18:19:25  27 :  0:	connected to 192.168.1.168:58080
+10940 :13236 2019-10-22 18:19:27 950 :  0:	login refused: [ Original ] - The user name or password is incorrect.
+
+10940 :13236 2019-10-22 18:19:27 969 :  0:	login refused: [ Original ] - The user name or password is incorrect.
+
+10940 :13236 2019-10-22 18:19:27 989 :  0:	login refused: [ Original ] - The user name or password is incorrect.
+
+10940 :13236 2019-10-22 18:19:28   5 :  0:	max login attempts
+10940 : 8608 2019-10-22 18:19:28  24 :  0:	session.exe end
+ 4140 : 4144 2019-10-26 17: 4:15  24 :  0:	daemon.exe started
+ 4140 : 4440 2019-10-26 17: 4:15  47 :  0:	starting service
+ 3116 : 3120 2019-10-28  9:29:56 768 :  0:	daemon.exe started
+ 3116 : 3460 2019-10-28  9:29:56 846 :  0:	starting service
+ 4520 : 4524 2019-10-28 11: 3:16 374 :  0:	daemon.exe started
+ 4520 : 4848 2019-10-28 11: 3:16 421 :  0:	starting service
+ 4364 : 4368 2019-10-28 16:30: 1  26 :  0:	daemon.exe started
+ 4364 : 4544 2019-10-28 16:30: 1  73 :  0:	starting service
+ 4364 : 4368 2019-10-28 16:44:40  25 :  0:	stopping service
+ 3852 : 3472 2019-10-28 16:46:21 826 :  0:	daemon.exe started
+ 3852 : 4396 2019-10-28 16:46:21 872 :  0:	starting service
+ 3852 : 3472 2019-10-29  0:34:57 844 :  0:	stopping service
+ 3576 : 3580 2019-10-29  0:36:22 435 :  0:	daemon.exe started
+ 3576 : 3876 2019-10-29  0:36:22 482 :  0:	starting service
+ 3576 : 3580 2019-10-29  1:24:18 673 :  0:	stopping service
+ 4248 : 4252 2019-10-29  9:50:46 949 :  0:	daemon.exe started
+ 4248 : 4480 2019-10-29  9:50:46 965 :  0:	starting service
+ 4212 : 4216 2019-10-29 14:56:18 704 :  0:	daemon.exe started
+ 4212 : 4416 2019-10-29 14:56:18 735 :  0:	starting service
+ 4480 : 4484 2019-10-29 22:42:12 932 :  0:	daemon.exe started
+ 4480 : 4700 2019-10-29 22:42:12 979 :  0:	starting service
+16256 : 7436 2019-10-29 23:52: 7 403 :  0:	KSetup::Stop:err
+11404 :14692 2019-10-29 23:53: 6 794 :  0:	KSetup::Install:err
+15348 : 5860 2019-10-29 23:53: 6 901 :  0:	KSetup::Start:err
+  508 :  484 2019-10-29 23:54: 5  96 :  0:	KSetup::Stop:err
+  508 :  484 2019-10-29 23:54: 7 101 :  0:	KSetup::Start:err

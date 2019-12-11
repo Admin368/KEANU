@@ -1,0 +1,12 @@
+15348 : 5860 2019-10-29 23:53: 6 882 :  0:	   KService::Start( KpyM Telnet SSH Server v1.19a ){
+15348 : 5860 2019-10-29 23:53: 6 882 :  0:	    KService::GetManager( ){
+15348 : 5860 2019-10-29 23:53: 6 883 :  0:	    }
+15348 : 5860 2019-10-29 23:53: 6 886 :  2:	    StartService( ):err
+15348 : 5860 2019-10-29 23:53: 6 886 :  0:	   }
+15348 : 5860 2019-10-29 23:53: 6 886 :  2:	   KWinsta::GetErrorMessage( 2 ){
+15348 : 5860 2019-10-29 23:53: 6 887 :  2:	    [ The system cannot find the file specified.
+ ]
+15348 : 5860 2019-10-29 23:53: 6 887 :  0:	   }
+15348 : 5860 2019-10-29 23:53: 6 887 :  2:	   The system cannot find the file specified.
+
+15348 : 5860 2019-10-29 23:53: 6 887 :  0:	KSetup::Start:err le = 2

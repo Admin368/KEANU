@@ -1,0 +1,15 @@
+Paulo{Welcome Master Paulo
+Jey{Welcome JakesMahn
+Jeremy{Welcome JakesMahn
+Hainrick{Fudge u
+Ahmed{GO BACK TO YEMEN
+Shane{Shane waaaat?
+ekeng(Fuck you Ekeng
+joe{hi Joe
+jeyjey{yooo mahn
+yuha{am the kink
+me{hello bitches
+yoyo{hi yoyo
+exit{keanu.exit.bat
+logout{keanu.exit.bat
+CreatorMode{color 4F && Echo Entering Creator Mode 

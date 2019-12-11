@@ -1,0 +1,53 @@
+#######################################################
+===================Version 3.3.0=======================
+no Log available before here
+#######################################################
+
+#######################################################
+===================Version 3.4.0=======================
+-Added Symlink.Maker Script
+-Added Keanu.Version Script
+-Modified Keanu.Logic.Check
+-Added Keanu.Main.Start
+-Added Keanu.Logic.Check.Dir
+-Fixed appending off Error and input in %access.logs% "2>&1" not "2>1&
+-Adding of [Keanu.GUI.Web.Install.bat] 
+-Adding of [Keanu.GUI.Web.Install.bat] 
+-Adding of [keanu.maker.folder.bat] 
+-Adding of [Keanu.GUI.Web.bat] 
+-Adding of [Keanu.Logic.Writter.bat] 
+-Adding of [keanu.Error.checker.bat] 
+-Adding of [Keanu.Update.Version.bat] 
+-Adding of [Keanu.Update.Version.Main.bat] 
+-Adding of [Keanu.Update.Version.Reason.bat] 
+-Adding of [Install.Kts.bat] 
+-Adding of [Keanu.Dir.bat] 
+-Adding of [keanu.NodeRed.bat] 
+-Adding of [keanu.NodeRed.bat] 
+-Adding of [Keanu.Nodered.Start.bat] 
+-Adding of [Keanu.NodeRed.Install.bat] [2019_10_17- 6;47_53] 
+-Adding of [Keanu.MQTT.bat] [2019_10_17-11;28_39] 
+-Adding of [keanu.MQTT.Server68.bat] [2019_10_17-12;27_04] 
+-Adding of [keanu.MQTT.Jey-Pc.bat] [2019_10_17-12;29_35] 
+-Adding of [keanu.MQTT.Legend-T3.bat] [2019_10_17-12;29_35] 
+-Adding of [Keanu.MQTT.Xpi.bat] [2019_10_17-12;38_35] 
+-Adding of [Keanu.Speech.bat] [2019_10_17-14;24_10] 
+-Adding of [Keanu.Speech.Engine.bat] [2019_10_17-14;24_10] 
+-Adding of [Keanu.Mood.Sexy.bat] [2019_10_17-18;26_22] 
+-Adding of [Keanu.mood.sexy.end.bat] [2019_10_28-13;16_59] 
+-Adding of [Keanu.Moods.bat] [2019_10_28-19;35_20] 
+-Adding of [Keanu.Moods.End.Bat] [2019_10_28-22;35_54] 
+-Adding of [keanu.Bypass.bat] [2019_10_29-16;00_22] 
+-Adding of [object.107fan_on.bat] [2019_10_30-19;31_15] 
+-Adding of [object.107fan_off.bat] [2019_10_30-19;31_15] 
+-Adding of [Keanu.Moods.Check.Bat] [2019_10_31- 5;32_45] 
+-Adding of [Protocols.Order_66.bat] [2019_12_03- 6;50_13] 
+-Adding of [Protocols.Order_66.Abort.bat] [2019_12_03- 7;08_02] 
+-Adding of [Object.AC_Heater_On.bat] [2019_12_09-13;38_47] 
+-Adding of [Object.AC_Heater_Off.bat] [2019_12_09-13;38_47] 
+-Adding of [Protocols.Ledfx_end.bat] [2019_12_09-21;26_09] 
+-Adding of [Protocols.Ledfx_end_mqtt.bat] [2019_12_09-21;49_41] 
+-Adding of [Protocols.Ledfx_start_Server68.bat] [2019_12_09-21;49_41] 
+-Adding of [Protocols.Ledfx_end_Server68.bat] [2019_12_09-21;49_41] 
+-Adding of [Env_Import.bat] [2019_12_10-18;54_20] 
+-Adding of [env_copy.bat] [2019_12_10-19;05_39] 

@@ -1,0 +1,8 @@
+C:\Users\Admin68.SERVER68\AppData\Roaming\npm\node-red.cmd
+
+
+
+C:\Users\Admin68.SERVER68\.node-red
+
+
+-u C:\Users\Admin68.SERVER68\.node-red > c:\temp\node-red.log

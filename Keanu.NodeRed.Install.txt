@@ -1,0 +1,20 @@
+Important
+mkdir c:\temp\
+
+start K:\Softwares\node-v10.16.3-x64.msi
+
+
+
+npm install -g --unsafe-perm node-red
+
+
+Chang Directory
+
+
+
+nssm install Node-RED "c:\Users\\"%USERNAME%"\AppData\Roaming\npm\node-red.cmd"
+nssm set Node-RED AppDirectory "c:\Users\\"%USERNAME%"\.node-red"
+nssm set Node-RED AppParameters "-u c:\Users\\"%USERNAME%"\.node-red > c:\temp\node-red.log"
+nssm set Node-RED Description "Keanu Node-Red"
+
+nssm edit Node-RED

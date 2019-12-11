@@ -1,0 +1,163 @@
+####################################################
+-fix symlink to be more torent to other directories
+-fix node
+-since git,replace all smlinks with a call in alternate file names
+-Re size ore oconvert all mood songs and include in keanu source files
+-make Keanu Access files constant repo, Moods and others that are heavy and dont need changes
+-make keanu. heavy as drive H for heavy un necsessary files
+-install node inn program files,it cant be moved around this much
+
+-explore azure and see azure and node hosting , generalizing the keanu, node and mqtt requests for all users
+-add a first time user creater unique id log in every PC 
+
+
+
+##################################################
+Keanu.chat
+-use cmd to write in folder
+-and node js to trigger alarm sound
+-and prompt cmd message pring message wiht %user%
+-and allowing user to write sending message
+-and then closes
+-have chat logo
+-chat log with user and time
+-and then it does the same ,updated the current chat file
+-node Js or mqtt prompting sound
+-node js call script reading
+-shuld have user select
+-message
+*****- CMD select options type menu
+-add Errorchecker
+-add Errorchecker to  keanu command execute after speech check wen sucessful
+-make separate mqtt batches
+-make messages that loops open and prints the current message and sends alarm after one saves remind save
+-add 7zip compersion to Update process
+-add voice variable to speech check process
+-add mqqt message to all speakers in network
+-random selector eg for custom selection
+-the scripts run shuld be in keanu for backup purposes
+-add User command run (set eg USer=SERVER68.Node) as first command to bypass %question%
+-add xslf files to folder so that any time u add a song no need for adding song
+##################################################
+ADVANCE AND LEARN AND ARCHIVEE BY INCOOPERATING THE FOLLOWING
+
+-FLUTTER >USERinterface
+-html>web server UI
+-css>Web server UI
+-python >advancement of function and logic
+-c>plactice to make full EXE
+-jave>functions
+-java script and node>functions and Web dev
+
+
+-default end time node triggered
+-if start to switch off default time trigger
+-time selector for time trigger
+-study the states of wled color state to link to xled color change
+
+-make keanu moods one file with segemented method
+-add mode start and end voice.speech of
+-add select option for moods
+
+
+
+-keanu speech transfer
+-mood active if condition for launching
+-mood active off all moods off trigger node
+-speech variable "mqtt" variations
+
+
+- making apps with C to practice C
+- xrof making OS
+-start a byte of python
+
+-pokemon go type xul game
+
+-Ai LED
+-identifypassport.com
+
+
+###############################################
+
+Add notepad open to file make
+
+% movie Franchise
+-saw
+-Trnasformers
+-Harry potter
+-James Bond
+-Indiana jones
+-Jurassic part
+-fast and furius
+-chonicles of nania
+-Xmen
+-Pirates of the carrebean
+-jason bond
+-mission impossible
+-Alien (promethius)
+-hunger games
+-ice age
+-terminator
+-fast and furious
+-nania
+-austin power
+-superman 
+-tim B's batman
+-Rush hour
+-underworld
+-scary movie
+-mighty duck
+-epic movie
+-disaster movies
+-Resident evil
+-transport
+
+###REWATCH###############
+-the matrix
+-Riddick
+-Law abiding citizen
+-the nice guys
+-sherlock
+-stardust
+
+#####MSD MOVIES########
+-super bad
+-the count of monte cristall
+-gangs of new york
+-the man with the iron fist
+-shanghai noon
+-3:10yuma
+-before sunrise
+-boyhood
+-before sunset
+-before Midnight
+
+####CLASSIC MOVIES#############
+-ms doughtfire
+-the black night
+-bigmama
+-badboys
+-nutty professor
+-bevely hill cops
+-titans
+-home alone
+-the princess bride
+-schindeler's list
+-the trueman show
+-amargedon
+-stuart little
+-big daddy
+-kangaroo jack
+-donne darko
+-gangs of new
+-tranning day
+-click
+
+####CLASSIC ANIMATIONS####
+-a bug's life
+-prince of egypt
+-treasure planet
+-hercules
+-blitz magic
+-brother bear
+-spirited Awy

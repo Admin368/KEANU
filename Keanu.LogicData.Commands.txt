@@ -1,0 +1,406 @@
+lazyKeanu{call lazy.bat
+feeling lazy{call lazy.bat
+lazy{call lazy.bat
+
+launch blank Keanu{Blankkeanu.bat
+Blank Keanu{Blankkeanu.bat
+Blankkeanu{Blankkeanu.bat
+
+
+exit{keanu.exit.bat
+close{keanu.exit.bat
+fuck off{keanu.exit.bat
+bye{call Keanu.exit.bat
+logout{echo logging out && call Keanu.logic.bat
+log out{call Keanu.logic.bat
+
+
+
+Speech Writer{keanu.speech.Writer.bat
+Speech Writter{keanu.speech.Writer.bat
+Speechwriter{keanu.speech.Writer.bat
+Speechwritter{keanu.speech.Writer.bat
+SPeech maker{keanu.speech.Writer.bat
+
+############ Object.FrontDoorlights#####################
+
+REM on lights{call Object.Wled.All_On.bat
+REM lights on{call Object.Wled.All_On.bat
+
+
+REM lights off{call Object.Wled.All_Off.bat
+REM off lights{call Object.Wled.All_Off.bat
+REM lights out{call Object.Wled.All_Off.bat
+REM switch off lights{call Object.Wled.All_Off.bat
+
+
+blink lights{call object.frontdoorlights_blink.bat
+lights blink{call object.frontdoorlights_blink.bat
+blink on{call object.frontdoorlights_blink.bat
+blinkon{call object.frontdoorlights_blink.bat
+::{call object.frontdoorlights_blink.bat
+::{call object.frontdoorlights_blink.bat
+
+
+stop blinking lights{call object.frontdoorlights_blinkoff.bat
+blinkoff lights{call object.frontdoorlights_blinkoff.bat
+blinkoff{call object.frontdoorlights_blinkoff.bat
+stop blinking{call object.frontdoorlights_blinkoff.bat
+{call object.frontdoorlights_blinkoff.bat
+{call object.frontdoorlights_blinkoff.bat
+{call object.frontdoorlights_blinkoff.bat
+
+#################################################################
+
+cls{call Keanu.Logic.Main.Start.bat
+clean{call Keanu.Logic.Main.Start.bat
+clear{call Keanu.Logic.Main.Start.bat
+
+logicmaster{call logicmaster.bat
+creatormode{call logicmaster.bat
+master mode{call logicmaster.bat
+logic master{call logicmaster.bat
+creator mode{call logicmaster.bat
+mm{call logicmaster.bat
+master mode{call logicmaster.bat
+im the master{call logicmaster.bat
+
+
+Start netflix{start http:\\netflix.com
+netflix{start https:\\netflix.com
+black out{curl "http://192.168.1.201/cm?user=admin&password=mqtt&cmnd=power%20off"
+
+
+############### Protocols.Ledfx #########################
+
+keanu start ledfx{call Protocols.Ledfx_start_Server68.bat
+start ledfx{call Protocols.Ledfx_start_Server68.bat
+keanu ledfx Protocol{call Protocols.Ledfx_start_Server68.bat
+keanu start Ledfx Protocol{call Protocols.Ledfx_start_Server68.bat
+keanu protocol ledfx{call Protocols.Ledfx_start_Server68.bat
+ledfx{call Protocols.Ledfx_start_Server68.bat
+Protocol.ledfx{call Protocols.Ledfx_start_Server68.bat
+Protocols.ledfx{call Protocols.Ledfx_start_Server68.bat
+
+Protocols.Ledfx_end.bat{call Protocols.Ledfx_end.bat 
+kill Ledfx{call Protocols.Ledfx_end_Server68.bat 
+end Ledfx{call Protocols.Ledfx_end_Server68.bat 
+ledfx end{call Protocols.Ledfx_end_Server68.bat 
+stop ledfx{call Protocols.Ledfx_end_Server68.bat 
+Protocols.Ledfx_end_mqtt.bat{call Protocols.Ledfx_end_mqtt.bat 
+Protocols.Ledfx_start_Server68.bat{call Protocols.Ledfx_start_Server68.bat 
+Protocols.Ledfx_end_Server68.bat{call Protocols.Ledfx_end_Server68.bat 
+
+
+start ledfx local{Protocols.Ledfx_start.Bat
+ledfx local{Protocols.Ledfx_start.Bat
+local ledfx{Protocols.Ledfx_start.Bat
+local ledfx start{Protocols.Ledfx_start.Bat
+
+stop ledfx local{Protocols.Ledfx_end.Bat
+ledfx local stop{Protocols.Ledfx_end.Bat
+end ledfx local{Protocols.Ledfx_end.Bat
+
+
+############### Protocols.Aubio ##########################
+keanu Aubio{protocols.aubio.bat
+keanu Aubio Protocol{protocols.aubio.bat
+keanu Protocol aubio{protocols.aubio.bat
+keanu start Aubio protocol{protocols.aubio.bat
+Aubio{protocols.aubio.bat
+Start aubio{protocols.aubio.bat
+Aubio Protocol{protocols.aubio.bat
+Protocol.aubio{protocols.aubio.bat
+Protocols.aubio{protocols.aubio.bat
+
+################ Protocols.sample ########################
+
+sample
+start sample
+sample protocol
+protocol sample
+Protocol.sample
+Protocols.sample
+keanu sample
+keanu start sample
+keanu start sample protocol
+keanu start protocol sample
+
+
+
+
+
+############### Protocol.all #########################
+keanu protocol show all
+
+
+
+############ Object.FrontDoorlights#####################
+
+REM switch on the Fan{object.107fan_on.bat
+REM on the fan{object.fan_on.bat
+REM fan on{object.fan_on.bat
+REM switch fan on{object.fan_on.bat
+REM *switch*fan*on*{object.fan_on.bat
+
+
+
+########################################################
+
+%%~nf Nena{echo it works
+
+{echo Please say something
+
+Keanu.GUI.Web.Install.bat{Keanu.GUI.Web.Install.bat
+keanu.maker.folder.bat{keanu.maker.folder.bat
+make folder{keanu.maker.folder.bat
+folder make{keanu.maker.folder.bat
+keanu folder make{keanu.maker.folder.bat
+keanu make folder{keanu.maker.folder.bat
+keanu folder maker{keanu.maker.folder.bat
+folder maker{keanu.maker.folder.bat
+
+
+keanu.maker.File.bat{keanu.maker.File.bat
+make File{keanu.maker.File.bat
+File make{keanu.maker.File.bat
+keanu File make{keanu.maker.File.bat
+keanu make File{keanu.maker.File.bat
+File maker{keanu.maker.File.bat
+Keanu File make{keanu.maker.File.bat
+
+
+Keanu Version{keanu.version.log.bat
+Keanu Version Log{keanu.version.log.bat
+Version Log{keanu.version.log.bat
+
+syslink{echo Did you mean SymLink?
+keanu sym Link{keanu.maker.Symlink
+keanu symlink{keanu.maker.Symlink
+keanu make symlink{keanu.maker.Symlink
+make symlink{keanu.maker.Symlink
+make sym link{keanu.maker.Symlink
+sym link make{keanu.maker.Symlink
+symlink make{keanu.maker.Symlink
+symlink maker{keanu.maker.Symlink
+sym link maker{keanu.maker.Symlink
+symlink{echo Please Calirify Make Symlink?
+sym link{echo Please Clarify Make Symlink?
+
+keanu.fullscreen.bat{call keanu.fullscreen.bat
+Full screen{call keanu.fullscreen.bat
+whole screen{call keanu.fullscreen.bat
+Keanu.GUI.Web.bat{call Keanu.GUI.Web.bat
+open keanu Web UI{call Keanu.GUI.Web.bat
+Keanu.Logic.Writter.bat{call Keanu.Logic.Writter.bat 
+launch Logic Writter{call Keanu.Logic.Writter.bat 
+launch Logic Writer{call Keanu.Logic.Writter.bat 
+Logic Writer{call Keanu.Logic.Writter.bat 
+Logic Writter{call Keanu.Logic.Writter.bat 
+start Logic Writter{call Keanu.Logic.Writter.bat 
+Write Logic{call Keanu.Logic.Writter.bat 
+Keanu Logic Writter{call Keanu.Logic.Writter.bat 
+Keanu Logic Writer{call Keanu.Logic.Writter.bat 
+start Logic Writer{call Keanu.Logic.Writter.bat 
+logic Write{call Keanu.Logic.Writter.bat 
+Keanu.logic.Writer{call Keanu.logic.Writer
+keanu.logic.Writer.bat{call keanu.logic.Writer.bat
+
+
+Create Variable{call Keanu.Logic.Variable.Create.bat
+Variable Create{call Keanu.Logic.Variable.Create.bat
+Variable{echo specify What do with variable
+Keanu Create Variable{call Keanu.Logic.Variable.Create.bat
+Keanu Variable Create{call Keanu.Logic.Variable.Create.bat
+Keanu Variable{echo specify What do with variable
+Keanu Make Variable{call Keanu.Logic.Variable.Create.bat
+Make Variable{call Keanu.Logic.Variable.Create.bat
+
+
+pause{call keanu.pause.bat
+keanu.locations.bat{call keanu.locations.bat
+keanu.Error.checker.bat{call keanu.Error.checker.bat 
+keanu.Error.check.bat{call keanu.Error.checker.bat 
+Keanu.Update.Version.bat{call Keanu.Update.Version.bat 
+Keanu.Update.Version.Main.bat{call Keanu.Update.Version.Main.bat 
+Keanu.Update.Version.Reason.bat{call Keanu.Update.Version.Reason.bat 
+Keanu.Lazy.bat{call Keanu.Lazy.bat
+
+
+
+Keanu.Dir.bat{call Keanu.Dir.bat 
+Dir{call Keanu.Dir.bat 
+Keanu Dir{call Keanu.Dir.bat 
+Keanu List All{call Keanu.Dir.bat 
+Keanu List Everything{call Keanu.Dir.bat 
+REM switch on the lights{call Object.Wled.All_On.bat
+REM switch off the lights{call Object.Wled.All_Off.bat
+REM turn on the lights{call Object.Wled.All_On.bat
+REM turn off the lights{call Object.Wled.All_Off.bat
+#open hosts{runas /user:Server68\Admin68 "Notepad C:\Windows\System32\drivers\etc\hosts"
+#hosts{runas /user:Server68\Admin68 "Notepad C:\Windows\System32\drivers\etc\hosts"
+open hosts{Notepad C:\Windows\System32\drivers\etc\hosts
+hosts{Notepad C:\Windows\System32\drivers\etc\hostsstart ispyserver{C:\Keanu\keanu.prog.data\i_py\i_py\ispyserver\iSpyServer.exe
+
+
+ideas{Notepad K:\keanu.ideas.txt
+i have ideas{Notepad K:\keanu.ideas.txt
+got ideas{Notepad K:\keanu.ideas.txt
+add ideas{Notepad K:\keanu.ideas.txt
+add idea{Notepad K:\keanu.ideas.txt
+
+
+
+
+
+start ispyserver{K:\keanu.prog.data\i_py\ispyserver\iSpyServer.exe
+ispyserver{K:\keanu.prog.data\i_py\ispyserver\iSpyServer.exe
+
+
+
+
+Install.Kts.bat{call Install.Kts.bat
+install KTS{call Install.Kts.bat
+keanu install KTS{call Install.Kts.bat
+install Protocol ledfx{install.ledfx.bat
+Install ispy{K:\Softwares\i_py\i_py64_7_2_1_0\i_pySetup.exe
+Install Node{K:\Softwares\node-v10.16.3-x64.msi
+Node Install{K:\Softwares\node-v10.16.3-x64.msi
+Install Nodejs{K:\Softwares\node-v10.16.3-x64.msi
+Nodejs Install{K:\Softwares\node-v10.16.3-x64.msi
+Install Anaconda{K:\Softwares\Anaconda3-2019.07-Windows-x86_64.exe
+Anaconda Install{K:\Softwares\Anaconda3-2019.07-Windows-x86_64.exekeanu.NodeRed.bat{call keanu.NodeRed.bat 
+
+
+
+keanu.NodeRed.bat{call keanu.NodeRed.bat
+open nodered{call keanu.NodeRed.bat
+nodered{call keanu.NodeRed.bat
+open node-red{call keanu.NodeRed.bat
+node-red{call keanu.NodeRed.bat
+
+
+Keanu.Nodered.Start.bat{call Keanu.Nodered.Start.bat
+start nodered{call keanu.NodeRed.start.bat
+run nodered{call keanu.NodeRed.start.bat
+nodered start{call keanu.NodeRed.start.bat
+start node-red{call keanu.NodeRed.start.bat
+run node-red{call keanu.NodeRed.start.bat
+node-red start{call keanu.NodeRed.start.bat
+
+Keanu.NodeRed.Install.bat{call Keanu.NodeRed.Install.bat 
+Install.NodeRed{call Keanu.NodeRed.Install.bat 
+Install.NodeRed.bat{call Keanu.NodeRed.Install.bat 
+install nodered{call Keanu.NodeRed.Install.bat 
+install node-red{call Keanu.NodeRed.Install.bat 
+node-red install{call Keanu.NodeRed.Install.bat 
+nodered install{call Keanu.NodeRed.Install.bat 
+Keanu.MQTT.bat{call Keanu.MQTT.bat 
+mqtt{call Keanu.MQTT.bat 
+keanu mqtt{call Keanu.MQTT.bat 
+send mqtt{call Keanu.MQTT.bat 
+mqtt send{call Keanu.MQTT.bat 
+idea{Notepad K:\keanu.ideas.txt
+keanu.MQTT.Server68.bat{call keanu.MQTT.Server68.bat 
+mqtt server68{call keanu.MQTT.Server68.bat 
+server68 mqtt{call keanu.MQTT.Server68.bat 
+send mqtt server68{call keanu.MQTT.Server68.bat 
+send mqtt to server68{call keanu.MQTT.Server68.bat 
+keanu.MQTT.Jey-Pc.bat{call keanu.MQTT.Jey-Pc.bat 
+mqtt Jey-pc{call keanu.MQTT.Jey-Pc.bat 
+Jey-pc MQTT{call keanu.MQTT.Jey-Pc.bat 
+send mqtt Jey-pc{call keanu.MQTT.Jey-Pc.bat 
+send mqtt to Jey-pc{call keanu.MQTT.Jey-Pc.bat 
+keanu.MQTT.Legend-T3.bat{call keanu.MQTT.Legend-T3.bat 
+mqtt Legend-t3{call keanu.MQTT.Legend-T3.bat 
+send mqtt Legend-t3{call keanu.MQTT.Legend-T3.bat 
+send mqtt to Legend-t3{call keanu.MQTT.Legend-T3.bat 
+Legend-t3 mqtt{call keanu.MQTT.Legend-T3.bat 
+Keanu.MQTT.Xpi.bat{call Keanu.MQTT.Xpi.bat 
+MQTT Xpi{call Keanu.MQTT.Xpi.bat 
+send MQTT Xpi{call Keanu.MQTT.Xpi.bat 
+send MQTT to Xpi{call Keanu.MQTT.Xpi.bat 
+xpi MQTT{call Keanu.MQTT.Xpi.bat
+
+
+Keanu.Speech.bat{call Keanu.Speech.bat
+Keanu Speech{call Keanu.Speech.bat
+speech{call Keanu.Speech.bat
+speak{call Keanu.Speech.bat
+keanu speak{call Keanu.Speech.bat
+say something{call Keanu.Speech.bat
+keanu say{call Keanu.Speech.bat
+say{call Keanu.Speech.bat
+Keanu.Speech.Engine.bat{call Keanu.Speech.Engine.bat
+
+REM Enable Speech{set Speech.Enable=Yes && Echo Keanu.Speech_Enabled
+REM Speech Enable{set Speech.Enable=Yes && Echo Keanu.Speech_Enabled
+REM Allow Speech{set Speech.Enable=Yes && Echo Keanu.Speech_Enabled
+REM Speech Allow{set Speech.Enable=Yes && Echo Keanu.Speech_Enabled
+REM Speech On{set Speech.Enable=Yes && Echo Keanu.Speech_Enabled
+REM on Speech{set Speech.Enable=Yes && Echo Keanu.Speech_Enabled
+
+
+REM Disable Disable{set Speech.Enable=No && Echo Keanu.Speech_Disabled
+REM Speech Disable{set Speech.Enable=No && Echo Keanu.Speech_Disabled
+REM Allow Speech{set Speech.Enable=No && Echo Keanu.Speech_Disabled
+REM Speech Allow{set Speech.Enable=No && Echo Keanu.Speech_Disabled
+REM Speech Off{set Speech.Enable=No && Echo Keanu.Speech_Disabled
+REM off Speech{set Speech.Enable=No && Echo Keanu.Speech_Disabled
+
+
+
+
+cheat install nodered{notepad Keanu.NodeRed.Install.txt
+cheat nodered install{notepad Keanu.NodeRed.Install.txt
+nodered install text{notepad Keanu.NodeRed.Install.txt
+nodered text{notepad Keanu.NodeRed.Install.txt
+node-red text{notepad Keanu.NodeRed.Install.txtKeanu.Mood.Sexy.bat{call Keanu.Mood.Sexy.bat 
+
+sexy time{call Keanu.Mood.Sexy.bat 
+its sexy time{call Keanu.Mood.Sexy.bat 
+lets get it on{call Keanu.Mood.Sexy.bat 
+
+
+
+keanu.Bypass.bat{call keanu.Bypass.bat 
+bypass{call keanu.Bypass.bat 
+keanu bypass{call keanu.Bypass.bat 
+object.107fan_on.bat{call object.107fan_on.bat 
+object.107fan_off.bat{call object.107fan_off.bat 
+Keanu.Moods.Check.Bat{call Keanu.Moods.Check.Bat 
+Keanu.Logic.Check.Moods.bat{call Keanu.Moods.Check.Bat 
+Transfer.bat{call Transfer.bat
+Transfer.bat{call Transfer.bat
+activate env{keanu_activate_env.bat
+Protocols.Order_66.bat{call Protocols.Order_66.bat 
+Order_66{call Protocols.Order_66.bat 
+Order 66{call Protocols.Order_66.bat 
+start Order 66{call Protocols.Order_66.bat 
+start Order_66{call Protocols.Order_66.bat 
+Protocols.Order_66.Abort.bat{call Protocols.Order_66.Abort.bat 
+
+#######################Heater#################################
+Object.AC_Heater_On.bat{call Object.AC_Heater_On.bat 
+heater on{call Object.AC_Heater_On.bat 
+its getting hot in here{call Object.AC_Heater_On.bat 
+its cold{call Object.AC_Heater_On.bat 
+hot{call Object.AC_Heater_On.bat 
+start heater{call Object.AC_Heater_On.bat
+
+Object.AC_Heater_Off.bat{call Object.AC_Heater_Off.bat 
+Heater off{call Object.AC_Heater_Off.bat 
+stop heater{call Object.AC_Heater_Off.bat 
+
+
+Env_Import.bat{call Env_Import.bat 
+env import{call Env_Import.bat 
+environment import{call Env_Import.bat 
+import env{call Env_Import.bat 
+keanu import env{call Env_Import.bat 
+env_copy.bat{call env_copy.bat 
+copy env{call env_copy.bat 
+env copy{call env_copy.bat 
+env export{call env_copy.bat 
+env_export.bat{call env_copy.bat 
+export env{call env_copy.bat 

@@ -1,0 +1,11 @@
+echo %var% |findstr /b "str" >nul && (
+  echo yes
+  some more commands
+) || (
+  echo no
+  some more commands
+)
+looks for (/b= at the beginning) str, (don't write to screen >nul) , if found (&&) do something, if not found (||) do another thing.
+
+You can also add a /i to make it case-insensitive.
+

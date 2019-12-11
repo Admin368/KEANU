@@ -1,0 +1,36 @@
+I need to use batch to check if a variable contains a certain word. (in this example, they will contain the word "1234"). This is my current code:
+
+set chs=Hello 1234 World.
+if "%ch%" == "*1234*" (
+    echo You cannot use this word in your screen name.
+) else (
+    goto continue
+)
+
+
+
+
+
+
+...............................................
+
+
+
+
+What you want to do is to pipe the line to search 
+into find command and then check errorlevel. 
+If it finds the specified string
+ then it returns "0" if not - "1".
+
+set a=Hello 1234 World.
+echo %a% | find "1" > nul
+if %errorlevel%==0 (
+    echo The string is found
+) else (
+    echo The string is not found
+)
+You can also use conditional execution
+ (see this link for more info)
+
+set a=Hello 1234 World.
+echo %a% | find "1234" > nul && echo The string is found || echo The string is not fo

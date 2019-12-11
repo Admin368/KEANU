@@ -1,0 +1,20 @@
+2019_12_11-12;33_53 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;33_54 User:CreatorMode Process [keanu.logic.Main] Started 
+2019_12_11-12;33_54 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.logic.Main]
+2019_12_11-12;33_54 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;33_54 User:CreatorMode Process [] Last Used
+2019_12_11-12;33_54 User:CreatorMode started [Keanu.Logic.Main] 
+2019_12_11-12;33_54 User:CreatorMode Logic entered:make symlink 
+2019_12_11-12;33_54 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;34_07 User:CreatorMode Process [keanu.Logic.Check] Started 
+2019_12_11-12;34_07 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.Logic.Check]
+2019_12_11-12;34_07 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;34_07 User:CreatorMode Process [] Last Used
+2019_12_11-12;34_07 User:CreatorMode Process [Keanu.Logic.Check] started 
+2019_12_11-12;34_07 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;34_08 User:CreatorMode Process [keanu.Maker.Symlink] Started 
+2019_12_11-12;34_08 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.Maker.Symlink]
+2019_12_11-12;34_08 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;34_08 User:CreatorMode Process [] Last Used
+2019_12_11-12;34_08 User:CreatorMode Keanu.Maker.Symlink started 
+2019_12_11-12;34_08 User:CreatorMode Sym link For File or Folder? =  

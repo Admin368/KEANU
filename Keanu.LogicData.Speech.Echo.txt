@@ -1,0 +1,71 @@
+mypc{ping 192.168.1.1
+yooo{echo wassup
+yoo{echo wassup
+y{echo wassup
+hi{echo hi,how are you?
+hi?{echo hi,how are you?
+
+hahah{echo h says nigga please
+nigga{echo h says wassup nigga
+sd{echo Paulo says realy
+
+
+am fine{echo thats great
+i love you{echo im too good for you!
+*love*{echo wat no no no no
+i dont love you{echo i know you do
+
+
+how are you doing?{echo am doing great
+how are u doing?{echo echo am doing great
+how are you doin?{echo echo am doing great
+how are you doin{echo echo am doing great
+how are you{echo echo am doing great
+Who are you?{echo Ahmed says I am your lovely assistant keanu
+What are you?{echo Ahmed says I am your byaaatch.
+howz the real keanu?{echo Im The Realm Keanu
+how is the real keanu?{echo Im The Realm Keanu
+hello bitches{echo me says hey i am a bitch
+turn lights on{echo me says lights on
+ekeng is a beautiful young man{echo me says in his dream
+etflix{echo me says ]
+light out{echo Paulo says 
+fuck you{echo Paulo says fuck you too
+fuck me{echo Paulo says yeah you wish
+
+
+
+
+
+
+dsds{echo hahah
+speech{echo it works
+dfkdhfdk{echo Paulo says hahahah
+sdsd{echo Paulo says sdsdsds
+sdsdsd{echo Paulo says sdsdsdsdsds
+sdsdsdsdsd{echo Paulo says sdsdsdsdsdsdsd
+dfdfdfdfdfefd{echo Paulo says dfdfdfdfdf
+dfdfdfdfdfd{echo Paulo says dfdfdfdfdf
+
+
+
+
+
+
+lo{echo Paulo says what?
+log out\{echo Paulo says what?
+logic{echo Paulo says 
+ks{echo Paulo says 
+clear{echo Paulo says 
+
+{echo Please say something
+yo yo{echo Paulo says yo yo wassup
+maker.file{echo Paulo says Keanu.maker.file.bat
+yo{echo Paulo says yooooo wassup
+paul{echo Paulo says The Master's Name shall not be mentioned
+hula hula{echo Paulo says huu huu
+no{echo Paulo says no what?
+syslink make{echo Paulo says Please Correct To Symlink Command
+file{echo CreatorMode says ready?{echo ready for What?
+ready?{echo ready for What?
+switch on the {echo Paulo says 

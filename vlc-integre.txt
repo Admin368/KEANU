@@ -1,0 +1,7 @@
+Using vlc -I null --play-and-exit [arguments], vlc opens in the background without appearing in the taskbar or system tray.
+
+However, it can be seen when 'more details' is clicked in task manager.
+
+For example, when you want to play audio while vlc is hidden:
+
+vlc -I null --play-and-exit "C:\Windows.old\Users\Public\Music\Sample Music\Kalimba.mp3"

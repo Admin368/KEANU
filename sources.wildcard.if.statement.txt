@@ -1,0 +1,56 @@
+3
+
+
+My batch file writes a list of files on screen where it contains the .cs extension
+
+for /F "usebackq delims=" %%A in (`cleartool ls  -rec ^| find /V "Rule:" ^| find /V "hijacked" ^| find /V "eclipsed" ^| find /V "-->"`) do ( 
+    if "%%~xA"==".cs"  echo %%A
+)
+This works fine. I want to enhance the functionality by adding another condition. I want to remove a certain word if it exists in the phrase. The word is obj
+
+Examples of my results are
+
+myThing\obj\this.cs
+obj\other\that\this.cs
+debug\this\that.cs
+
+I tried
+
+for /F "usebackq delims=" %%A in (`cleartool ls  -rec ^| find /V "Rule:" ^| find /V "hijacked" ^| find /V "eclipsed" ^| find /V "-->"`) do ( 
+if "%%~xA"==".cs" if NOT "%%A"=="*obj*" echo %%A
+)
+but this doesn't change the results compared to the first.
+
+I think my if syntax is correct, and the issue is actually with the "%%A"=="*obj*"
+
+#############################################
+
+6
+
+You were thinking correctly: the wildcards (*) are not supported.
+
+A good workaround for the problem is findstr, though you need to retrieve result via %ERRORLEVEL% and I think you must cache it through another variable (so that next if does not override it's value):
+
+echo %%A | findstr /C:"obj"
+set obj_errorlevel=%errorlevel%
+
+if "%%~xA"==".cs" if "%obj_errorlevel%"=="1" echo %%A
+...but that is a hard way.
+
+An even easier way is to add the condition to the source command (the one inside if) by adding another pipe stage: ^| find /V "obj":
+
+for /F "usebackq delims=" %%A in (`cleartool ls  -rec ^| find /V "Rule:" ^| find
+
+
+
+
+
+
+
+
+
+
+
+
+
+

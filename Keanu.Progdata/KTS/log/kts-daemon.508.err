@@ -1,0 +1,24 @@
+  508 :  484 2019-10-29 23:54: 5  78 :  0:	   KService::Stop( KpyM Telnet SSH Server v1.19a ){
+  508 :  484 2019-10-29 23:54: 5  78 :  0:	    KService::GetManager( ){
+  508 :  484 2019-10-29 23:54: 5  80 :  0:	    }
+  508 :  484 2019-10-29 23:54: 5  81 :1062:	    ControlService( ):err
+  508 :  484 2019-10-29 23:54: 5  81 :  0:	   }
+  508 :  484 2019-10-29 23:54: 5  81 :1062:	   KWinsta::GetErrorMessage( 1062 ){
+  508 :  484 2019-10-29 23:54: 5  81 :1062:	    [ The service has not been started.
+ ]
+  508 :  484 2019-10-29 23:54: 5  81 :  0:	   }
+  508 :  484 2019-10-29 23:54: 5  81 :1062:	   The service has not been started.
+
+  508 :  484 2019-10-29 23:54: 5  81 :  0:	KSetup::Stop:err le = 1062
+  508 :  484 2019-10-29 23:54: 7  82 :  0:	   KService::Start( KpyM Telnet SSH Server v1.19a ){
+  508 :  484 2019-10-29 23:54: 7  82 :  0:	    KService::GetManager( ){
+  508 :  484 2019-10-29 23:54: 7  82 :  0:	    }
+  508 :  484 2019-10-29 23:54: 7  84 :  2:	    StartService( ):err
+  508 :  484 2019-10-29 23:54: 7  84 :  0:	   }
+  508 :  484 2019-10-29 23:54: 7  84 :  2:	   KWinsta::GetErrorMessage( 2 ){
+  508 :  484 2019-10-29 23:54: 7  84 :  2:	    [ The system cannot find the file specified.
+ ]
+  508 :  484 2019-10-29 23:54: 7  84 :  0:	   }
+  508 :  484 2019-10-29 23:54: 7  85 :  2:	   The system cannot find the file specified.
+
+  508 :  484 2019-10-29 23:54: 7  85 :  0:	KSetup::Start:err le = 2

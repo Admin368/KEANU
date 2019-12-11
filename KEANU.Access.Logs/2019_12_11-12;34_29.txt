@@ -1,0 +1,45 @@
+2019_12_11-12;34_30 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;34_30 User:CreatorMode Process [keanu.logic.Main] Started 
+2019_12_11-12;34_30 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.logic.Main]
+2019_12_11-12;34_30 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;34_30 User:CreatorMode Process [] Last Used
+2019_12_11-12;34_30 User:CreatorMode started [Keanu.Logic.Main] 
+2019_12_11-12;34_30 User:CreatorMode Logic entered:ideas 
+2019_12_11-12;34_30 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;35_42 User:CreatorMode Process [keanu.Logic.Check] Started 
+2019_12_11-12;35_42 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.Logic.Check]
+2019_12_11-12;35_42 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;35_42 User:CreatorMode Process [] Last Used
+2019_12_11-12;35_42 User:CreatorMode Process [Keanu.Logic.Check] started 
+2019_12_11-12;35_42 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;36_25 User:CreatorMode Process [keanu.logic.Main] Started 
+2019_12_11-12;36_25 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.logic.Main]
+2019_12_11-12;36_25 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;36_25 User:CreatorMode Process [] Last Used
+2019_12_11-12;36_25 User:CreatorMode started [Keanu.Logic.Main] 
+2019_12_11-12;36_25 User:CreatorMode Logic entered:ideas 
+2019_12_11-12;36_25 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;38_30 User:CreatorMode Process [keanu.Logic.Check] Started 
+2019_12_11-12;38_30 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.Logic.Check]
+2019_12_11-12;38_30 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;38_30 User:CreatorMode Process [] Last Used
+2019_12_11-12;38_30 User:CreatorMode Process [Keanu.Logic.Check] started 
+2019_12_11-12;38_30 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;39_11 User:CreatorMode Process [keanu.logic.Main] Started 
+2019_12_11-12;39_11 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.logic.Main]
+2019_12_11-12;39_11 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;39_11 User:CreatorMode Process [] Last Used
+2019_12_11-12;39_11 User:CreatorMode started [Keanu.Logic.Main] 
+2019_12_11-12;39_11 User:CreatorMode Logic entered:ideas 
+2019_12_11-12;39_11 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;39_21 User:CreatorMode Process [keanu.Logic.Check] Started 
+2019_12_11-12;39_21 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.Logic.Check]
+2019_12_11-12;39_21 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;39_21 User:CreatorMode Process [] Last Used
+2019_12_11-12;39_21 User:CreatorMode Process [Keanu.Logic.Check] started 
+2019_12_11-12;39_21 User:CreatorMode Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]
+2019_12_11-12;40_31 User:CreatorMode Process [keanu.logic.Main] Started 
+2019_12_11-12;40_31 User:CreatorMode Fired Process [Keanu.Location.Bat] called by [keanu.logic.Main]
+2019_12_11-12;40_31 User:CreatorMode Process Ended [Keanu.Location]  
+2019_12_11-12;40_31 User:CreatorMode Process [] Last Used
+2019_12_11-12;40_31 User:CreatorMode started [Keanu.Logic.Main] 

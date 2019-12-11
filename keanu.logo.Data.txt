@@ -1,0 +1,9 @@
+:::::::::::::::::::::::::::::::::::::::::::::
+::Kernel.Encoded.Artificial.Network.Unicode::
+:::::::::##::::::::#####:::::::#######:::::::K%random%Kernel%random%%random%
+:::::::####:::::::##:::##:::::::::::##:::::::E%random%Encoded%random%%random%
+:::::::::##:::::::##:::##::::::::::##::::::::A%random%Artificial%random%%random%
+:::::::::##:::::::##:::##:::::::::##:::::::::N%random%Network%random%%random%
+:::::::#####::::::::###::::::::::##::::::::::U%random%Unicode%random%%random%
+::Kernel.Encoded.Artificial.Network.Unicode::  %BotName% %version%
+:::::::::::::::::::::::::::::::::::::::::::::

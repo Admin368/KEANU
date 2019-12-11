@@ -1,0 +1,2 @@
+scripts manager port :9999
+mosquitto port :1883
