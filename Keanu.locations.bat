@@ -10,6 +10,7 @@ set Errorlog.Prev=Keanu.Error.Log.Prev.txt
 set Process.Name=%Process.Name.Default%
 
 net use K: \\192.168.1.168\keanu >nul 2>nul
+net use H: \\192.168.1.168\keanu.Heavy >nul 2>nul
 K:
 
 

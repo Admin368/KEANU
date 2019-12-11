@@ -6,6 +6,7 @@ echo %keanu.date.time% User:%user% Fired Process [Keanu.Maker.File] >>%access.lo
 
 
 net use K: \\192.168.1.168\keanu >nul 2>nul
+net use H: \\192.168.1.168\keanu.Heavy >nul 2>nul
 K: >nul
 
 type keanu.logo.data.txt

@@ -9,6 +9,8 @@
 
 -explore azure and see azure and node hosting , generalizing the keanu, node and mqtt requests for all users
 -add a first time user creater unique id log in every PC 
+-Fix Admin Request
+
 
 
 
