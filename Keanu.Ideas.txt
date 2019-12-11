@@ -18,7 +18,8 @@
 -Add Custom Run Code section in Configurations file
 -Change 192.168.1.168 to Host server variable someone can change in config file
 -Add users to config file,Admin user
-
+-experiment how git ssh works
+-
 
 
 ##################################################
