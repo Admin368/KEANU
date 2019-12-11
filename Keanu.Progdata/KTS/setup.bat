@@ -1,1 +1,0 @@
-daemon.exe -setup
