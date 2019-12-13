@@ -39,4 +39,8 @@ Features to Work on:
 - <location.bat> make "Run_Server" Variable with "Local" / "Main" as values
 - <location.bat> if Run_Server=Main , Mount = net use %Main_Server%\%Main_Dir%
 - pitch and work onthis as the CMD custom commands assistant  control pannel for Hassio , launch command ans control hassio ,straight from cmd, say hassio
+- revise and revise all unnecessary call command as they create file locks
+- clean all 2>&1 appends to %access.logs%
+- add backup process that asks you dir to backup
+- make updater version or maybe github is enough
  
