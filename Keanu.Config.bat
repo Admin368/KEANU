@@ -8,6 +8,8 @@
 
 :: Check in the keanu Folder Keanu\Keanu.Config\ for examples
 
+:: if running Windows Server or Have any port blocking Antivirus,
+:: Make sure you ublock all necessary port the main PC server will use
 REM The Following are configuration files
 @echo off
 REM #Important IP_ADDRESSES
@@ -106,3 +108,13 @@ Set MQTT_Light3_Name=
 Set MQTT_Light3_IP=
 Set MQTT_Light4_Name=
 Set MQTT_Light4_IP=
+
+
+:Camera_config
+:: name the cameras location of where they are to help
+Set Camera1_IP=
+Set Camera1_Name=
+Set Camera2_IP=
+Set Camera2_Name=
+Set Camera2_IP=
+Set Camera2_Name=
