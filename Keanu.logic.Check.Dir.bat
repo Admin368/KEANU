@@ -15,4 +15,4 @@ call %text%.bat 2>nul && call keanu.logic.main
 
 call %text% 2>nul && call keanu.logic.main
 )
-echo %keanu.date.time% User:%user% [Keanu.logic.Check.Dir] No Dir Match Found >>%access.logs% 2>&1
+echo %keanu.date.time% User:%user% [Keanu.logic.Check.Dir] No Dir Match Found >>%access.logs%
