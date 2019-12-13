@@ -43,4 +43,27 @@ Features to Work on:
 - clean all 2>&1 appends to %access.logs%
 - add backup process that asks you dir to backup
 - make updater version or maybe github is enough
- 
+- now since there is keanu.config, fix redudance issues of having files on both Pc and mini servers
+- it might be that keanu is useless without bein in home ssid
+- unless we can master utilizing and opting info sending thru nabucas wen not available
+- but also , aclient pc shuld not have all the files but when not in Pc ,use Keanu.Basic Which will be made at first use on a PC, with only the command and necessary basics.
+- files in keanu.basic will be updated everytime keanu is exiting in the background it compies new , speech, commands and variables,that can run without need for home ssid or are cloud compatible
+-have the folder ,keanu.basics in keanu home directory, for client Pc, all pc ,it will be copies from main Pc from config source list
+- coz its reduculous having multiful full versions of keanu, if something changes its will be hard to keep track
+- have notices while running keanu.basic and Run.Dir
+- <kanu.basic> if main pc ping ask if switch to main PC server
+
+- Keanu.Basic
+        - No voice engine
+        - no lights change
+        - ask if cloud access lights?
+        - no camera access
+        - no calling file
+        - only speech
+        - only cloud capable processes
+        - uses local variables
+        - has a copy of the last Keanu.config file
+        - run on config file
+        - runs on 127.0.0.1
+        - new features of keanu.basic , come together with version updates
+-c:\Keanu.Share default share folder that keanu shares to the rest on PC#
