@@ -10,6 +10,7 @@
 
 :: if running Windows Server or Have any port blocking Antivirus,
 :: Make sure you ublock all necessary port the main PC server will use
+
 REM The Following are configuration files
 @echo off
 REM #Important IP_ADDRESSES
@@ -60,6 +61,7 @@ Set Hassio_Mqtt_Topic_General=
 Set Hassio_MQTT.Topic=%Hassio_Mqtt_Topic_General%
 Set Hassio_MQTT_Topic=%Hassio_Mqtt_Topic_General%
 
+:: MAKE SURE THE INFO ABOUT PC# IS THE SAME FOR ALL CONFIGS
 Set PC1_Name=192.168.1.168
 Set PC1_IP=Server68
 Set PC2_Name=Legend_T3
