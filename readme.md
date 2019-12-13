@@ -8,4 +8,6 @@ Features to Work on:
 - meters away from the 107 nabucas cloud ,announcing left the the premence and master is approaching
 - Create a schedule formmat called PLN.TXT that is taken with a node template to make the automated schedule announcements
 - since i can access my nabu casa, have trigger button that launches , vnc server or baidu cloud on al the Pc.
-- java server - client based setup for keanu for kearning purposed
+- java client server based setup for keanu for kearning purposed
+- java 3d part use and virtualization incorparation with https://worldwind.arc.nasa.gov/java ,for location position of us or devices  on keanu system
+- 
