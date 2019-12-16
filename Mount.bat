@@ -26,11 +26,11 @@ set Access.Error= "H:\Keanu.Aces.Logs\%Keanu.date.time%Fatal.txt"
 
 :Mount_Locations
 net share 
-net use K: \\192.168.1.168\keanu >nul 2>nul
+net use K: \\127.0.0.1\keanu >nul 2>nul
 net share
-net use H: \\192.168.1.168\keanu.Heavy >nul 2>nul
+net use H: \\127.0.0.1\keanu.Heavy >nul 2>nul
 net share
-net use J: \\192.168.1.168\keanu\Projects\Django.Dev >nul 2>nul
+net use J: \\127.0.0.1\keanu\Projects\Django.Dev >nul 2>nul
 K:
 cd K:\
 
@@ -44,13 +44,13 @@ echo %keanu_name% Started Time %keanu.time% >>%access.logs%
 echo ############################### >>%access.logs%
 echo ############################### >>%access.logs%
 
-Echo ==============================MOUNT.LOG.START=============================
-Echo %keanu.date.time% Mount Was Started and Essesntial Processes Completed
-Echo %keanu.date.time% Caller     = %Caller%
-Echo %keanu.date.time% Launcher   = %Launcher%
-Echo %keanu.date.time% Debug      = %Debug%
-Echo %keanu.date.time% Keanu_name = %keanu_name%
-Echo %keanu.date.time% 
+Echo ==============================MOUNT.LOG.START============================= >>%access.logs%
+Echo %keanu.date.time% Mount Was Started and Essesntial Processes Completed >>%access.logs%
+Echo %keanu.date.time% Caller     = %Caller% >>%access.logs%
+Echo %keanu.date.time% Launcher   = %Launcher% >>%access.logs%
+Echo %keanu.date.time% Debug      = %Debug% >>%access.logs%
+Echo %keanu.date.time% Keanu_name = %keanu_name% >>%access.logs%
+Echo %keanu.date.time%                           >>%access.logs%
 Echo %keanu.date.time% User:Keanu.Mount Support_Process [Keanu.Request.Admin] Was Called by [%Caller%] >>%access.logs%
 Echo %keanu.date.time% User:Keanu.Mount Support_Process [Keanu.Date.Time] Was Called by [%caller%]>>%access.logs%
 Echo ==============================MOUNT.LOG.END ============================= >>%access.logs%
