@@ -16,10 +16,17 @@ REM The Following are configuration files
 REM #Important IP_ADDRESSES
 :Keanu_config
 set Keanu_Name=
-Set Debug=Yes
+Set Debug=ON
+:: Debug options (ON / OFF)
+
 
 :Keanu_config_Auto
 Set Botname=%Keanu_Name%
+Set /P Debug=Debug :
+echo %debug%|findstr /i "Yes"
+if %errorlevel% equ 0 (set Debug=ON)
+Echo %debug%|findstr /i "No"
+if %errorlevel% equ 0 (set Debug=OFF)
 
 
 
