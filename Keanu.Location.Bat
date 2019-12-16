@@ -1,20 +1,26 @@
-@echo off
-REM if %Username% equ "SERVER68$" goto :EOF
-Set Run_Once=Yes
-:: for this whole session Run_once= yes and the below code will
-:: run once even tho location.bat is called many times
-:: and at end of sessio the value will reset
-Echo %Run_Once%|findstr /i "Yes"
-if %errorlevel% equ 0 (
-:Run_Once
-type Keanu.Config.bat >>%access.logs%
-)
-echo %keanu.date.time% User:%user% Fired Process [keanu.Date.Time.bat] called by [Keanu.Location.Bat]>>%access.logs%
-call keanu.Date.Time.bat
-call Keanu.Config.bat
+@echo %debug%
+:Check_Mount
+if %Mount_Used%==Yes goto
+
+:No_Mount
+Echo Fatal Error #001
+Echo Mount Wa
+:Location
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@LOCATION.START@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>>%access.logs%
 echo %keanu.date.time% User:%user% Process [%Process.Name%] Started >>%access.logs%
-echo %keanu.date.time% User:%user% Fired Process [Keanu.Location.Bat] called by [%Process.Name%]>>%access.logs%
-echo %keanu.date.time% User:%user% Fired Process [Keanu.Config.Bat] called by [%Process.Name%]>>%access.logs%
+
+
+:Run_Once
+echo %Run_Once%|findstr /i "Yes"
+if %errorlevel% equ 0 (
+set Run_Once=Yes
+:Run_Once_Code
+:: put any commands you wanna run once here
+
+)
+
+:Location_Log
+echo %keanu.date.time% User:%user% Process [%Process.Name%] Started >>%access.logs%
 
 set Errorlog=Keanu.Error.Log.txt
 set Errorlog.Prev=Keanu.Error.Log.Prev.txt
@@ -48,3 +54,6 @@ title %BotName% %Version% Process [%Process.Name%]
 echo %keanu.date.time% User:%user% Process Ended [Keanu.Location]  >>%access.logs%
 
 echo %keanu.date.time% User:%user% Process [%Process.Name%] Last Used>>%access.logs%
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@LOCATION.END@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ >>%access.logs%
+:EOF
