@@ -5,8 +5,8 @@ Set Process.Name=Keanu.Main
 :Launcher_Variables
 set Launcher=Keanu.Main
 set Speech.Enable=Yes
-set FullScreen=Yes
 set Keanu.Speech=ON
+set FullScreen=Yes
 set MQTT.Request=False
 set NodeRed.Request=False
 
