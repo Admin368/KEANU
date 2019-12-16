@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_29-16;00_22" 
-@echo on
+@echo %Debug%
 Set Process.Name.Default=keanu.Bypass.bat 
 
 set Process.Name=%Process.Name.Default%

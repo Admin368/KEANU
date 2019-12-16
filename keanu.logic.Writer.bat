@@ -1,5 +1,5 @@
 Echo [Keanu.Logic.Writter] starting here 
-@echo On
+@echo %Debug%
 Set Process.Name=keanu.logic.Writer
 call keanu.location.bat
 REM Echo No Code Yet (if Updated is Comment This Out)
