@@ -68,3 +68,5 @@ Features to Work on:
         - new features of keanu.basic , come together with version updates
 - c:\Keanu.Share default share folder that keanu shares to the rest on PC#
 - change smlink files to actual redirects as smlink failes after copy,its path dependent
+- add if local or main server online
+- advance config to mount local Dir then netshare
