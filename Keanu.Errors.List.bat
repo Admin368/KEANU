@@ -1,5 +1,4 @@
-@echo off
-REM @echo %Debug%
+@echo %Debug%
 cls
 set check_once=No
 
@@ -20,6 +19,7 @@ goto :Recheck
 :R01
 Echo Fatal Error
 Echo Mount Was not Launched
+
 set /p run_mount=Would you Like to run Mount?(Yes / No) =
 echo %run_mount%|findstr /i "Y" 
 if %errorlevel% equ 0 (
