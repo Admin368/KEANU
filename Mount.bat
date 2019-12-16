@@ -53,9 +53,10 @@ Echo %keanu.date.time% Keanu_name = %keanu_name%
 Echo %keanu.date.time% 
 Echo %keanu.date.time% User:Keanu.Mount Support_Process [Keanu.Request.Admin] Was Called by [%Caller%] >>%access.logs%
 Echo %keanu.date.time% User:Keanu.Mount Support_Process [Keanu.Date.Time] Was Called by [%caller%]>>%access.logs%
-Echo ==============================MOUNT.LOG.END =============================
-
-
+Echo ==============================MOUNT.LOG.END ============================= >>%access.logs%
+Echo ==============================KEANU.CONFIG.START========================== >>%access.logs%
+type Keanu.Config.bat >>%access.logs%
+Echo ===============================KEANU.CONFIG.END========================== >>%access.logs%
 
 
 :FullScreen
@@ -71,18 +72,12 @@ REM mode con:cols=80 lines=100
 )
 
 
-:Run_Once
-echo %Run_Once%|findstr /i "Yes"
-if %errorlevel% equ 0 (
-set Run_Once=Yes
-:Run_Once_Code
-:: put any commands you wanna run once here
-
-)
 
 
 :Last
 K:
 cd K:\
 
+
+Set Mount_Finished=Yes
 :EOF
