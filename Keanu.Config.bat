@@ -15,7 +15,7 @@ REM The Following are configuration files
 @echo %Debug%
 REM #Important IP_ADDRESSES
 :Keanu_config
-set Keanu_Name=
+set Keanu_Name=Keanu
 Set Debug=ON
 :: Debug options (ON / OFF)
 
