@@ -12,8 +12,18 @@
 :: Make sure you ublock all necessary port the main PC server will use
 
 REM The Following are configuration files
-@echo off
+@echo %Debug%
 REM #Important IP_ADDRESSES
+:Keanu_config
+set Keanu_Name=
+Set Debug=Yes
+
+:Keanu_config_Auto
+Set Botname=%Keanu_Name%
+
+
+
+
 :Main_Config
 Set Home_SSID=The_Tower
 Set Main_Server_IP=192.168.1.168
@@ -26,15 +36,20 @@ Set Nabu_Casa_Node_Address=
 set Main_Node_IP=192.168.1.100
 set Main_Node_Port=1880
 
-Set /P Local_PC_IP=<C:Keanu.config\Local_ip.txt
-Set /P Local_PC_NAME=<C:Keanu.config\Local_name.txt
-Set /P Local_PC_Dir=<C:Keanu.config\Local_Dir.txt
+
+Set /P Local_PC_IP=<C:\Keanu.config\Local_ip.txt
+Set /P Local_PC_NAME=<C:\Keanu.config\Local_name.txt
+Set /P Local_PC_Dir=<C:\Keanu.config\Local_Dir.txt
+Set /P Local_PC_Heavy=<C:\Keanu.config\Local_heavy.txt
+Set /P Local_PC_Projects=<C:\Keanu.config\Local_projects.txt
+
 
 :Auto_Config_Main_Ip
 set Main_Server=%Main_Server_IP%
 Set Main_Dir=%Main_Server_Dir%
 Set Main_PC=%Main_Server%
 Set Main_PC_Dir=%Main_Server%
+set Local_Template=%Main_dir%\Keanu.config
 
 Set Hassio.Cloud=%Nabu_Casa_Address%
 Set Hassio_Cloud=%Nabu_Casa_Address%
