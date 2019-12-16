@@ -16,6 +16,7 @@ REM The Following are configuration files
 REM #Important IP_ADDRESSES
 :Keanu_config
 set Keanu_Name=Keanu
+set /p Version=<keanu.version.txt
 Set Debug=ON
 :: Debug options (ON / OFF)
 
