@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_17-14;24_10" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Keanu.Speech.bat 
 Rem Error Margin 
 Echo [Keanu.Speech.bat] starting here 
-@echo Off
+@echo %Debug%
 
 set Process.Name=%Process.Name.Default%
 set Proces.Name=%Process.Name%

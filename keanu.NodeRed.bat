@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_17- 5;05_49" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=keanu.NodeRed
 Rem Error Margin 
 Echo [keanu.NodeRed.bat] starting here 
-@echo Off
+@echo %Debug%
 
 
 set Process.Name=%Process.Name.Default%

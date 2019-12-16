@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 
 :start01
 set var=A

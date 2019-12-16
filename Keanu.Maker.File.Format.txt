@@ -1,4 +1,4 @@
-@echo Off
+@echo %Debug%
 Echo No Code Yet (if Updated is Comment This Out)
 pause
 Keanu.logic.Main.bat

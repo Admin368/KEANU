@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=LogicMaster.bat
 call Keanu.location.bat
 

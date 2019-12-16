@@ -1,9 +1,9 @@
-@echo off
+@echo %Debug%
 call Keanu.location.bat
 
 setlocal
 title Launching -.N.E.O.-
-@echo off
+@echo %Debug%
 mode con: cols=54 lines=20
 color 0a
 echo.
@@ -565,7 +565,7 @@ echo REM CLS finished.
 
 
 :CMD
-@echo off
+@echo %Debug%
 cls
 title Command Prompt Launched by ALICE
 ver

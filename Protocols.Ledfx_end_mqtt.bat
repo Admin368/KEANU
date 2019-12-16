@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_12_09-21;49_41" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Protocols.Ledfx_end_mqtt.bat 
 Rem Error Margin 
 Echo [Protocols.Ledfx_end_mqtt.bat] starting here 
-@echo Off
+@echo %Debug%
 Echo No Code Yet (if Updated is Comment This Out)
 pause
 Keanu.logic.Main.bat

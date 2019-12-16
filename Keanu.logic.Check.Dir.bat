@@ -1,4 +1,4 @@
-@Echo Off
+@echo %Debug%
 Set Process.Name=keanu.Logic.Check.Dir
 call keanu.location.bat
 goto :Run.Dir

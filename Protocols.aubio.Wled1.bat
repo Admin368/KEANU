@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Protocols.aubio.Wled1
 REM call Keanu.location.bat
 

@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Protocols.aubio.Wled2
 call Keanu.location.bat
 

@@ -1,4 +1,4 @@
-@echo Off
+@echo %Debug%
 Set Process.Name.Default=Object.FrontDoor.Lights
 call Keanu.location.bat
 

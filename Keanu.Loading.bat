@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 REM Set Process.Name=keanu.Loading.bat
 Echo %keanu.date.time% User:%user% Support_Process [keanu.Loading.bat] Was started >>%access.logs%
 call Keanu.location.bat

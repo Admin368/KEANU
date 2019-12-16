@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 REM Set Process.Name.Default=Keanu.Version
 call keanu.location.bat 2>>%access.logs%
 Echo %keanu.date.time% User:%user% Support_Process [Keanu.Version] Was Called >>%access.logs%

@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 set Process.Name=Install.KTS_telnet.bat
 call Keanu.location.bat
 

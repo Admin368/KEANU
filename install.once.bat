@@ -1,4 +1,4 @@
-rem @echo off
+rem @echo %Debug%
 
 copy kts.%1.ini kts.ini
 del kts.telnet.ini

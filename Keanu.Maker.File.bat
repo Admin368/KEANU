@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 set Process.Name=Keanu.Maker.File
 
 call keanu.locations.bat
@@ -87,7 +87,7 @@ Echo No Similar File found
 Echo now Creating
 )
 Echo REM 107.Studios .File Created by "%user%" on "%keanu.date.time%" >%MK.File.Name%
-Echo @echo off >>%MK.File.Name%
+Echo @echo %Debug% >>%MK.File.Name%
 Echo Set Process.Name.Default=%MK.File.Name% >>%MK.File.Name%
 echo %keanu.date.time% User:%user% Process [Keanu.Maker.File] Creating signature >>%access.logs%
 Echo Creating signature

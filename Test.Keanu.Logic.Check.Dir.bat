@@ -1,4 +1,4 @@
-@echo Off
+@echo %Debug%
 REM call keanu.location.bat
 REM echo %keanu.date.time% User:%user% Process [Keanu.Logic.Check.Dir] Called >>%access.log% 2>1&
 

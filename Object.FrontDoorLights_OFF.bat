@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Object.FrontDoor_OFF
 call Keanu.location.bat
 

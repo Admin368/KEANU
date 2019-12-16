@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_16-22;53_58" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Keanu.Dir.bat 
 Rem Error Margin 
 Echo [Keanu.Dir.bat] starting here 
-@echo Off
+@echo %Debug%
 call keanu.location.bat
 Echo No Code Yet (if Updated is Comment This Out)
 pause

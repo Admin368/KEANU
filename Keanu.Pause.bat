@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 
 Set Process.Name=keanu.Pause
 call keanu.location.bat

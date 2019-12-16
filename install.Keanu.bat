@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 set
 set Process.Name=install.Keanu
 call keanu.location.bat

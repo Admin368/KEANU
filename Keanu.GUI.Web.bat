@@ -1,5 +1,5 @@
 Echo [keanu.maker.folder] starting here 
-@echo Off
+@echo %Debug%
 Set Process.Name=keanu.maker.folder
 call keanu.location.bat 1>nul 2>>&1
 Echo No Code Yet (if Updated is Comment This Out)

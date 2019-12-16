@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_12_15-20;29_33" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=install.nssm.bat 
 set Process.Name=%Process.Name.Default%
 set Proces.Name=%Process.Name%

@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name=keanu.Logic.Check
 call keanu.location.bat
 echo %keanu.date.time% User:%user% Process [Keanu.Logic.Check] started >>%access.logs%

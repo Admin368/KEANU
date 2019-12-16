@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name=keanu.Maker.Symlink
 call keanu.location.bat
 echo %keanu.date.time% User:%user% Keanu.Maker.Symlink started >>%access.logs%

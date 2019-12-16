@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_17- 6;47_53" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Keanu.NodeRed.Install.bat 
 Rem Error Margin 
 Echo [Keanu.NodeRed.Install.bat] starting here 
-@echo Off
+@echo %Debug%
 
 
 set Process.Name=%Process.Name.Default%
@@ -34,11 +34,11 @@ pause
 Echo Installing Node-RED JS Script
 @echo %Debug%
 npm install -g --unsafe-perm node-red 2>>%access.logs%
-@echo off
+@echo %Debug%
 pause
 
 Echo Installing Node-RED Dependencies
-@echo off
+@echo %Debug%
 cd K:\Keanu.Prog.data\nssm-2.24\nssm-2.24\win64 2>>%access.logs%
 start K:\Keanu.Prog.data\nssm-2.24\nssm-2.24\win64\nssm.exe 2>>%access.logs%
 pause
@@ -51,7 +51,7 @@ nssm install Node-RED "c:\Users\\"%USERNAME%"\AppData\Roaming\npm\node-red.cmd" 
 nssm set Node-RED AppDirectory "c:\Users\\"%USERNAME%"\.node-red" 2>>%access.logs%
 nssm set Node-RED AppParameters "-u c:\Users\\"%USERNAME%"\.node-red > c:\temp\node-red.log" 2>>%access.logs%
 nssm set Node-RED Description "Keanu Node-Red" 2>>%access.logs%
-@echo off
+@echo %Debug%
 Echo Configurations Done
 Pause
 

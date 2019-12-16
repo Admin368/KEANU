@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_12_09-21;26_09" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Protocols.Ledfx_end.bat 
 
 set Process.Name=%Process.Name.Default%

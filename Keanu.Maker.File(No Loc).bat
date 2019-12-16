@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name=keanu.Maker.File.NO.LOC
 Rem call keanu.locations.bat
 Rem echo %keanu.date.time% User:%user% Fired Process [Keanu.Maker.File] >>%access.logs% 2>&1

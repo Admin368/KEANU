@@ -1,5 +1,5 @@
-@echo off
-@echo off
+@echo %Debug%
+@echo %Debug%
 Set Process.Name.Default=Object.XLED_ON
 call keanu.location.bat
 

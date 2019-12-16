@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_28-19;35_20" 
-@echo off
+@echo %Debug%
 
 Echo Phase01==============================================================
 

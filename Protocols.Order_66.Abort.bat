@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_12_03- 7;08_02" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Protocols.Order_66.Abort.bat 
 Rem Error Margin 
 Echo [Protocols.Order_66.Abort.bat] starting here 

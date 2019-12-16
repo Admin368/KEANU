@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name=Keanu.Exit
 call Keanu.location.bat
 echo %keanu.date.time% User:%user% started Process [Keanu.Exit.bat] >>%Access.logs%

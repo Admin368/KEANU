@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name=keanu.Speech.Writer
 call keanu.location.bat
 call Keanu.LogicData.Create.bat

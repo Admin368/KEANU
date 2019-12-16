@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Object.MQTT.Test_On
 call keanu.location.bat
 

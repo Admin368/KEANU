@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_30-19;31_15" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=object.107fan_off.bat 
 
 set Process.Name=%Process.Name.Default%

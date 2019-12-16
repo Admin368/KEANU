@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 set Process.Name=Install.Ledfx.Procedure1
 Echo %keanu.date.time% User:%user% Install_Process [Install.Ledfx.Procedure1] Was Started >>%access.logs%
 call keanu.location.bat

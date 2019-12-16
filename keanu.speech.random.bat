@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name=keanu.Speech.Random
 call Keanu.location.bat
 

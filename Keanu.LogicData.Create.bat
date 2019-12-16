@@ -1,4 +1,4 @@
-@echo Off
+@echo %Debug%
 Set Process.Name=keanu.logicData.Create
 call keanu.location.bat 2>>%access.logs%
 
