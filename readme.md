@@ -66,4 +66,5 @@ Features to Work on:
         - run on config file
         - runs on 127.0.0.1
         - new features of keanu.basic , come together with version updates
--c:\Keanu.Share default share folder that keanu shares to the rest on PC#
+- c:\Keanu.Share default share folder that keanu shares to the rest on PC#
+- change smlink files to actual redirects as smlink failes after copy,its path dependent
