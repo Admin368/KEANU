@@ -1,32 +1,27 @@
-@echo off
-net use K: \\192.168.1.168\keanu >nul 2>nul
-net use H: \\192.168.1.168\keanu.Heavy >nul 2>nul
-K:
-cd K:\
-call keanu.date.time.bat
-Set Process.Name=Fast_Keanu
-cls
-set Access.logs= "H:Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Access.log= "H:Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acess.logs= "H:Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acess.log= "H:Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acces.logs= "H:Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acces.log= "H:Keanu.Access.Logs\%Keanu.date.time%.txt"
-cls
-set Access.Error= "H:Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Errors= "H:Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
-set Acess.Errors= "H:Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "H:Keanu.Acces.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "H:Keanu.Acess.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "H:Keanu.Aces.Logs\%Keanu.date.time%Fatal.txt"
-cls
-set Speech.Enable=No
+@echo %Debug%
+Set Process.Name=Keanu.Main
+
+
+:Launcher_Variables
+set Launcher=Keanu.Main
+set Speech.Enable=NO
 set Keanu.Speech=OFF
+set FullScreen=Yes
 set MQTT.Request=False
 set NodeRed.Request=False
-cls
-call keanu.date.time >nul
-call locations >nul
+
+:Launcher_Essentials
+title %Launcher% %Keanu_Name% %version%
+echo %keanu.date.time% %Launcher% calling [KeanuLocation.bat] >>%access.logs%
+call location.bat
+
+
+:Launcher_Log
+echo %keanu.date.time% Launcher started [%launcher%] >>%access.logs%
+
+
+
+:Launcher_Main
 cls
 cd K:\
 Set /P User=<Keanu.Adm.txt
