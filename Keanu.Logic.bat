@@ -21,31 +21,9 @@ call keanu.pause
 cls
 
 :Name
-set reply=Who Dares to wake me?
-call reply.bat
-set /p name=Who Am I Talking To:
 
-if /i "%name%"=="N" goto :Newuser
 
-for /f "tokens=1,* delims={" %%a in (Keanu.LogicData.Users.txt) do (
 
-if /i "%name%"=="%%a" (
-set reply=%%b
-call reply.bat
-set user=%%a
-call keanu.pause
-cls
-goto :Logic.start
-)
-)
-
-echo %BotName%: sorry Your name is not Registered
-goto :Name
-
-:NewUser
-set reply=Setup New User
-call reply.bat
-set /p NU="New UserName: "
 
 :: DYNAMIC QUESTIONS THAT PULL REALTIME INFORMATION
 if /i "%NU%"=="What time is it?" goto :TIME

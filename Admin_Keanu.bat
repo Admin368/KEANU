@@ -1,5 +1,5 @@
 @echo %Debug%
-Set Process.Name=Keanu.Main
+Set Process.Name=Admin.Keanu
 
 
 :Launcher_Variables

@@ -87,8 +87,33 @@ goto :Launcher_Question
 
 
 
+:Stage_1.5
+:User
+Set Name=%User%
+
+if /i "%name%"=="N" goto :Newuser
+
+for /f "tokens=1,* delims={" %%a in (Keanu.LogicData.Users.txt) do (
+
+if /i "%name%"=="%%a" (
+set reply=%%b
+call reply.bat
+set user=%%a
+REM call keanu.pause
+cls
+goto :Stage_2
+)
+)
 
 
+Echo sorry Your name is not Registered /No User Entered
+set /p name= Enter User :
+goto :User
+
+:NewUser
+set reply=Setup New User
+call reply.bat
+set /p NU="New UserName: "
 
 :start01
 Echo Launch _KEANU_ ?
