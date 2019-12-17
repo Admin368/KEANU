@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_17-12;29_35" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=keanu.MQTT.Legend-T3.bat 
 Rem Error Margin 
 Echo [keanu.MQTT.Legend-T3.bat] starting here 
-@echo Off
+@echo %Debug%
 Echo No Code Yet (if Updated is Comment This Out)
 pause
 Keanu.logic.Main.bat

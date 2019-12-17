@@ -1,4 +1,4 @@
-@echo on
+@echo %Debug%
 call Keanu.location.bat
 
 goto :start01

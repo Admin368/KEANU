@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_12_09-13;38_47" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Object.AC_Heater_On.bat 
 
 set Process.Name=%Process.Name.Default%

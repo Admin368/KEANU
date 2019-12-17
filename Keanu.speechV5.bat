@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 call:speak "Hello ,%user%"
 :begin
 set /p "spk=Speak: "

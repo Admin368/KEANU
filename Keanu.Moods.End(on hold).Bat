@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_28-22;35_54" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Keanu.Moods.End.Bat 
 
 

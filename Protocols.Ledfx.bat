@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Protocols.Ledfx
 call Keanu.location.bat
 

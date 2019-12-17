@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Object.TV_On
 call keanu.location.bat
 

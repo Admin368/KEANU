@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_16- 7;21_07" 
-@echo off
+@echo %Debug%
 REM Process name for Error checker changed to allow loging of process that called it just like location.bat 
 REM set Process.Name=Keanu.Error.checker.bat
 Echo [keanu.Error.Checker] starting here 
-@echo Off
+@echo %Debug%
 
 REM set Process.Name=%Process.Name.Default%
 REM set Proces.Name=%Process.Name%

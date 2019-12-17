@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 REM Set Process.Name=Keanu.Date.Time
 
 REM #### time Variables #####

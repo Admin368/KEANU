@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_17-12;27_04" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=keanu.MQTT.Server68.bat 
 Rem Error Margin 
 

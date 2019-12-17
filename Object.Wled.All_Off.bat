@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Object.Wled.All_Off
 call keanu.location.bat
 

@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 call Keanu.location.bat
 
 echo Press any key When Done

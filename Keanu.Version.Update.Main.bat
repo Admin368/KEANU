@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_10_16- 7;54_49" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=Keanu.Version.Update.Main
 Rem Error Margin 
 Echo [Keanu.Version.Update.Main] starting here 
-@echo Off
+@echo %Debug%
 call keanu.location.bat
 Echo No Code Yet (if Updated is Comment This Out)
 pause

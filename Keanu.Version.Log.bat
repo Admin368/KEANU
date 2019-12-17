@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=keanu.Version.Log
 call keanu.location.bat
 echo %keanu.date.time% User:%User% Script [Keanu.Version.Log] started >>%access.logs% 2>1&	

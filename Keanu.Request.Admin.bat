@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 REM Set Process.Name=keanu.Request.Admin
 
 :: BatchGotAdmin

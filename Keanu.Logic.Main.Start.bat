@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 cls
 Set Process.Name=keanu.logic.Main.Start
 call keanu.location.bat

@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Keanu.Moods.Check.0Bat
 set Process.Name=%Process.Name.Default%
 goto :Pre.Check

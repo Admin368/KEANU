@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Protocols.Ledfx
 REM call keanu.location.bat
 

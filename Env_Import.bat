@@ -1,5 +1,5 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_12_10-18;54_20" 
-@echo off 
+@echo %Debug% 
 Set Env=%Text%
 Set Process.Name.Default=Env_Import.bat 
 set Process.Name=%Process.Name.Default%

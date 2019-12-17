@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 call Keanu.location.bat
 
 echo ha

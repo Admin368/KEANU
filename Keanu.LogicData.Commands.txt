@@ -404,3 +404,25 @@ env copy{call env_copy.bat
 env export{call env_copy.bat 
 env_export.bat{call env_copy.bat 
 export env{call env_copy.bat 
+
+
+install nssm{install.nssm.bat
+install nodered{install.nssm.bat
+install node-red{install.nssm.bat
+configure nssm{install.nssm.bat
+
+
+commands{notepad Keanu.LogicData.Commands.txt
+add commands{notepad Keanu.LogicData.Commands.txt
+edit commands{notepad Keanu.LogicData.Commands.txt
+
+debug on{set Debug=ON
+debug{set Debug=ON
+start debug{set Debug=ON
+start debugging{set Debug=ON
+debug off{set Debug=OFF
+end debug{set Debug=OFF
+Stop Debug{set Debug=OFF
+Stop Debugging{set Debug=OFF
+
+

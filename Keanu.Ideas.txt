@@ -1,4 +1,5 @@
 ####################################################
+- make the Ideas tx the new read.md as new feature to work on section,cancel out wen done an version
 -fix symlink to be more torent to other directories
 -fix node
 -since git,replace all smlinks with a call in alternate file names
@@ -9,7 +10,16 @@
 
 -explore azure and see azure and node hosting , generalizing the keanu, node and mqtt requests for all users
 -add a first time user creater unique id log in every PC 
+-Fix Admin Request
 
+-add local file mounting to drives
+- make Keanu.Configurations file (simple and Clear)
+-Add importation to Locations File
+-Add Custom Run Code section in Configurations file
+-Change 192.168.1.168 to Host server variable someone can change in config file
+-Add users to config file,Admin user
+-experiment how git ssh works
+-
 
 
 ##################################################

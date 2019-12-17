@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 set var=A
 set /p var2=Choice:
 echo %var2%|findstr /i "%var%" > sources.variable.in.variable.test.txt

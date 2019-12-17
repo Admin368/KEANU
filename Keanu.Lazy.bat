@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 Set Process.Name.Default=Keanu.Lazy
 call Keanu.location.bat
 

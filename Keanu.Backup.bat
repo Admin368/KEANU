@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 call keanu.location.bat
 echo Process [Keanu.Backup] User:%user% %keanu.date% %keanu.time% >>%access.logs%
 

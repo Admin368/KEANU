@@ -1,5 +1,5 @@
 REM Echo [Keanu.GUI.Web.Install] starting here 
-@echo Off
+@echo %Debug%
 set Process.Name=Install.Keanu.GUI.Web
 call keanu.location.bat
 Echo No Code Yet (if Updated is Comment This Out)

@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 goto :068
 
 :Done

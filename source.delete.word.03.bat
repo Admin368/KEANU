@@ -1,4 +1,4 @@
-@echo off 
+@echo %Debug% 
     setlocal enableextensions disabledelayedexpansion
 
     set search=Found 

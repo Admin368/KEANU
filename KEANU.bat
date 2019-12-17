@@ -1,90 +1,33 @@
-@echo off
+@echo %Debug%
 Set Process.Name=Keanu.Main
-call keanu.Request.Admin.bat
 
 
-
-
-net use K: \\192.168.1.168\keanu >nul 2>nul
-K:
-call keanu.date.time.bat
-
-set Access.logs= "Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Access.log= "Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acess.logs= "Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acess.log= "Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acces.logs= "Keanu.Access.Logs\%Keanu.date.time%.txt"
-set Acces.log= "Keanu.Access.Logs\%Keanu.date.time%.txt"
-
-
-set Access.Error= "Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Errors= "Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
-set Acess.Errors= "Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "Keanu.Acces.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "Keanu.Acess.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "Keanu.Aces.Logs\%Keanu.date.time%Fatal.txt"
-
+:Launcher_Variables
+set Launcher=Keanu.Main
 set Speech.Enable=Yes
 set Keanu.Speech=ON
+set FullScreen=Yes
 set MQTT.Request=False
 set NodeRed.Request=False
-REM SETX NodeRedRequest "False"
-REM SETX Text "None"
-REM SETX Mood "None"
+
+:Launcher_Essentials
+title %Launcher% %Keanu_Name% %version%
+echo %keanu.date.time% %Launcher% calling [KeanuLocation.bat] >>%access.logs%
+call location.bat
+
+
+:Launcher_Log
+echo %keanu.date.time% Launcher started [%launcher%] >>%access.logs%
 
 
 
-Echo SET NodeRedRequest=%NodeRed.Request%>K:\Keanu.Transfer\Transfer.bat
-Echo SET Mood=End Mood>>K:\Keanu.Transfer\Transfer.bat
-Echo SET TEXT=End Mood>>K:\Keanu.Transfer\Transfer.bat
-Echo Call KEANU.BYPASS>>K:\Keanu.Transfer\Transfer.bat
-Echo Call Keanu.Moods.Check.bat>>K:\Keanu.Transfer\Transfer.bat
-Echo Exit>>K:\Keanu.Transfer\Transfer.bat
-mosquitto_pub -h 192.168.1.170 -p 1883 -m "ON" -t Mood\Transfer\State
-
-
-
-Echo %keanu.date.time% User:%user% Support_Process [Keanu.Request.Admin] Was Called by [Keanu.Main] >>%access.logs%
-Echo %keanu.date.time% User:%user% Support_Process [Keanu.Date.Time] Was Called by [Keanu.Main]>>%access.logs%
-
-echo %keanu.date.time% Current Location [Keanu.bat] >>%access.logs%
-echo %keanu.date.time% calling [KeanuLocation.bat] >>%access.logs%
-call Keanu.location.bat
-echo %keanu.date.time% User:%user% Process [Keanu.Request.Admin] Was Called >>%access.logs%
-
-
-echo ############################### >>%access.logs%
-echo ############################### >>%access.logs%
-echo Keanu Version %Version% >>%access.logs%
-echo Keanu Session Started >>%access.logs%
-echo Keanu Started Date %keanu.date% >>%access.logs%
-echo Keanu Started Time %keanu.time% >>%access.logs%
-echo ############################### >>%access.logs%
-echo ############################### >>%access.logs%
-
-echo %keanu.date.time% Setting Botname >>%access.logs%
-set Botname=KEANU
-title %BotName% 3.0
-
-
-echo %keanu.date.time% calling [keanu.pause.bat] >>%access.logs%
-call keanu.pause
-
-echo %keanu.date.time% Adjusting View To Full Screen >>%access.logs%
-CLS
-REM mode con lines=32766
-Echo %keanu.date.time% User:%user% Support_Process [Keanu.FullScreen] Was Called by [Keanu.Main]>>%access.logs%
-call FULLSCREEN.BAT
-REM mode con:cols=80 lines=100
-
-
+:Launcher_Main
 cls
 echo 107_Studios
 echo %keanu.date.time% [Keanu.Main] calling [keanu.logo.bat] >>%access.logs%
 call keanu.logo.bat
 echo %keanu.date.time% [Keanu.Main] calling [keanu.version.bat] >>%access.logs%
 call keanu.version.bat
-
 goto start02
 
 

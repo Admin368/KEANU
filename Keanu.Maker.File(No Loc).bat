@@ -1,9 +1,10 @@
-@echo off
+@echo %Debug%
 Set Process.Name=keanu.Maker.File.NO.LOC
 Rem call keanu.locations.bat
 Rem echo %keanu.date.time% User:%user% Fired Process [Keanu.Maker.File] >>%access.logs% 2>&1
 
 net use K: \\192.168.1.168\keanu >nul 2>nul
+net use H: \\192.168.1.168\keanu.Heavy >nul 2>nul
 K: >nul
 
 type keanu.logo.data.txt

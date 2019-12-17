@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 set Process.Name=Keanu.Maker.File
 
 call keanu.locations.bat
@@ -6,6 +6,7 @@ echo %keanu.date.time% User:%user% Fired Process [Keanu.Maker.File] >>%access.lo
 
 
 net use K: \\192.168.1.168\keanu >nul 2>nul
+net use H: \\192.168.1.168\keanu.Heavy >nul 2>nul
 K: >nul
 
 type keanu.logo.data.txt
@@ -86,7 +87,7 @@ Echo No Similar File found
 Echo now Creating
 )
 Echo REM 107.Studios .File Created by "%user%" on "%keanu.date.time%" >%MK.File.Name%
-Echo @echo off >>%MK.File.Name%
+Echo @echo %Debug% >>%MK.File.Name%
 Echo Set Process.Name.Default=%MK.File.Name% >>%MK.File.Name%
 echo %keanu.date.time% User:%user% Process [Keanu.Maker.File] Creating signature >>%access.logs%
 Echo Creating signature

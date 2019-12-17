@@ -1,9 +1,9 @@
 REM 107.Studios .File Created by "CreatorMode" on "2019_12_10-19;05_39" 
-@echo off 
+@echo %Debug% 
 Set Process.Name.Default=env_copy.bat 
 Rem Error Margin 
 Echo [env_copy.bat] starting here 
-@echo Off
+@echo %Debug%
 Echo No Code Yet (if Updated is Comment This Out)
 pause
 Keanu.logic.Main.bat

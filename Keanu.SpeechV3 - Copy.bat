@@ -1,4 +1,4 @@
-@echo on
+@echo %Debug%
 REM Set Process.Name=keanu.SpeechV3
 REM call Keanu.location.bat
 

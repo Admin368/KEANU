@@ -1,4 +1,4 @@
-@echo off
+@echo %Debug%
 REM Set Process.Name=keanu.logo
 call Keanu.location.bat
 REM type Keanu.logo.data.txt
