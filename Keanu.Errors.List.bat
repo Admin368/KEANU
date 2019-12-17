@@ -17,9 +17,10 @@ goto :Recheck
 :Error_List
 
 :R01
-Echo Fatal Error
-Echo Mount Was not Launched
-
+set reply=Fatal Error
+call reply.bat
+Set reply=Mount Was not Launched
+call reply.bat
 set /p run_mount=Would you Like to run Mount?(Yes / No) =
 echo %run_mount%|findstr /i "Y" 
 if %errorlevel% equ 0 (
@@ -34,6 +35,8 @@ exit
 goto :Clean
 
 :R02
+set reply=Error Launcher Crashed
+pause
 goto :clean
 :R03
 goto :clean
