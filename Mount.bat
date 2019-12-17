@@ -25,12 +25,24 @@ set Access.Error= "H:\Keanu.Acess.Logs\%Keanu.date.time%Fatal.txt"
 set Access.Error= "H:\Keanu.Aces.Logs\%Keanu.date.time%Fatal.txt"
 
 :Mount_Locations
+echo
+Echo Checking if in home Network
+Echo Checking if in home Network >>%access.logs%
+
+Netsh WLAN show interfaces >Temp.Ip.txt
+>nul type Temp.ip.txt|findstr /i "%Home_SSID%"
+if %errorlevel% equ 0 (
+
+)
+
 net share 
 net use K: \\127.0.0.1\keanu >nul 2>nul
 net share
 net use H: \\127.0.0.1\keanu.Heavy >nul 2>nul
 net share
 net use J: \\127.0.0.1\keanu\Projects\Django.Dev >nul 2>nul
+
+REM net share Keanu=%Local_Dir% /GRANT:Everyone,FULL
 K:
 cd K:\
 
