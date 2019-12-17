@@ -7,14 +7,20 @@ Echo Default Launcher Variables being Set
 pause
 
 :Launcher_Variables
+Set Launcher?=Yes
 set Launcher=%Process.Name%
 set Speech.Enable=Yes
 set Keanu.Speech=ON
 set FullScreen=Yes
 set MQTT.Request=False
 set NodeRed.Request=False
-Set Loading_seq=
-Set Launch-Question=
+Set Loading=Yes
+Set Launch_Question=No
+Set MM=No
+Set Fast_Keanu=No
+Set Use_Admin=No
+Set Use_Pre_User=No
+Set Pre_User=None
 call Keanu.Launcher.bat
 
 :Launcher_Essentials
@@ -24,10 +30,32 @@ echo %keanu.date.time% %Launcher% calling [KeanuLocation.bat] >>%access.logs%
 call location.bat
 
 
+
 :Launcher_Log
 echo %keanu.date.time% Launcher started [%launcher%] >>%access.logs%
 
+
+
+echo %Use_Admin%|findstr /i "on"
+if %errorlevel% equ 0 goto :Set_Admin
+echo %Use_Admin%|findstr /i "Yes"
+if %errorlevel% equ 0 goto :Set_Admin
+echo %USe_Admin%|findstr /i "True"
+if %errorlevel% equ 0 goto :Set_Admin
+echo %Use_Pre_User%|findstr /i "on"
+if %errorlevel% equ 0 goto :Set_Admin
+echo %Use_Pre_User%|findstr /i "Yes"
+if %errorlevel% equ 0 goto :Set_Admin
+echo %Use_Pre_User%|findstr /i "True"
+if %errorlevel% equ 0 goto :Set_Admin
 goto :Stage_1
+:Set_Admin
+Set /P User=<Keanu.Adm.txt
+goto :Stage_5
+
+:Pre_User
+Set user=%Pre_User%
+goto :Stage_5
 
 :Stage_1
 :Launcher_Question
@@ -95,8 +123,7 @@ echo %MM%|findstr /i "True"
 if %errorlevel% equ 0 goto :Stage_4
 Echo KEANU_LOGIC starting
 echo %keanu.date.time% calling [keanu.logic.bat] >>%access.logs%
-Keanu.Logic.Main.Start.bat
-pause
+Keanu.Logic.bat
 goto :Error
 
 :Stage_4
@@ -109,6 +136,16 @@ set reply=Creator Mode initiated
 call reply.bat
 CreatorMode.bat
 goto :Error
+
+:Stage_5
+:Fast_Keanu
+cls
+cd K:\
+if %
+cls
+Echo KEANU (C) 2019 107_Studios
+Echo Fast_Keanu_Prompt
+call Keanu.Logic.Main.bat
 
 
 :startpage
@@ -132,4 +169,5 @@ pause
 :Error
 set Error_List=R02
 call Error_List.bat
+pause
 :EOF
