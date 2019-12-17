@@ -57,7 +57,10 @@ set Main_Server=%Main_Server_IP%
 Set Main_Dir=%Main_Server_Dir%
 Set Main_PC=%Main_Server%
 Set Main_PC_Dir=%Main_Server%
+
 set Local_Template=%Main_dir%\Keanu.config
+Set Local_PC=%Local_ip%
+Set Local_Dir=%Local_PC_Dir%
 
 Set Hassio.Cloud=%Nabu_Casa_Address%
 Set Hassio_Cloud=%Nabu_Casa_Address%
@@ -71,8 +74,7 @@ set Main_Sound=%Main_Sound_IP%
 Set Main_Music=%Main_Music_IP%
 Set Main_Node=%Main_Node_IP%:%Main_Node_Port%
 
-Set Local_PC=%Local_ip%
-Set Local_Dir=%Local_PC_Dir%
+
 
 
 :Hassio_Config
