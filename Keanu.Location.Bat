@@ -21,7 +21,7 @@ set Run_Once=Yes
 
 )
 
-
+:Location_Main
 
 :Location_Log
 echo %keanu.date.time% User:%user% Process [%Process.Name%] Started >>%access.logs%
