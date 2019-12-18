@@ -3,8 +3,30 @@ set Caller=%Process.Name%
 set Process.Name=Keanu.Mount_Essesntials
 set Mount_Used=Yes
 
+:Launcher_check
+echo %Launcher?%|findstr /i "Yes"
+if %errorlevel% equ 0 (
+goto :unMount
+)
+Echo Launcher not Used
+Set Error_list=R06
+Error_list.bat
+goto :Mount_error
+
+:unMount
+Echo Unmounting Process
+pause
+goto :Mount_Essesntials
+
+subst K: /D
+subst H: /D
+subst J: /D
+goto :Mount_Essesntials
+
 
 :Mount_Essesntials
+Echo Mounting Mount_Essesntials
+pause
 call Keanu.config.bat
 call keanu.Request.Admin.bat
 call keanu.data.time.bat
@@ -32,9 +54,49 @@ Echo Checking if in home Network >>%access.logs%
 Netsh WLAN show interfaces >Temp.Ip.txt
 >nul type Temp.ip.txt|findstr /i "%Home_SSID%"
 if %errorlevel% equ 0 (
-
+goto :Mount_Network_Main_New
 )
+if %errorlevel% equ 1 (
+goto :Mount_Local_Dir
+)
+goto :Mount_error
 
+
+:Mount_Network_Main_new
+Set Mount_Type=Network_new
+subst K: \\%Main_Server_IP%\Keanu
+subst H: \\%Main_Server_IP%\keanu.Heavy
+subst J: \\%Main_Server_IP%\Projects\Django.Dev
+
+
+
+:Mount_Network_Main_old
+Set Mount_Type=Network_Old
+net use K: \\%Main_Server_IP%\Keanu
+net use H: \\%Main_Server_IP%\keanu.Heavy
+net use J: \\%Main_Server_IP%\Projects\Django.Dev
+goto :Mounted
+
+:Mount_Local_Dir
+Set Mount_Type=Local
+Echo you are Currently not in your Home Network
+timeout /t 4
+Set reply=Launching Local Keanu
+call reply.bat
+
+subst K: %Local_PC_Dir%
+subst H: %Local_PC_Heavy%
+subst J: %Local_PC_Projects%
+goto :Mounted
+
+
+:Mount_error
+Set Error=R04
+Error_list.bat
+exit
+goto :eof
+
+:Mount_old
 net share 
 net use K: \\127.0.0.1\keanu >nul 2>nul
 net share
@@ -42,6 +104,7 @@ net use H: \\127.0.0.1\keanu.Heavy >nul 2>nul
 net share
 net use J: \\127.0.0.1\keanu\Projects\Django.Dev >nul 2>nul
 
+:Mounted
 REM net share Keanu=%Local_Dir% /GRANT:Everyone,FULL
 K:
 cd K:\
