@@ -70,3 +70,6 @@ Features to Work on:
 - change smlink files to actual redirects as smlink failes after copy,its path dependent
 - add if local or main server online
 - advance config to mount local Dir then netshare
+- write keanu update and install script that uses Git and has changes value (have auto version Checker)
+- make installl script
+  -add git in essentials in installation
