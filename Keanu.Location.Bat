@@ -32,5 +32,5 @@ set Errorlog.Prev=Keanu.Error.Log.Prev.txt
 set Process.Name=%Process.Name.Default%
 
 title %Keanu_NAme% %Version% Process [%Process.Name%]
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@LOCATION.END@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ >>%access.logs%
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@LOCATION.END@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ >>%access.logs%
 :EOF
