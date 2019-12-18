@@ -17,9 +17,12 @@ goto :Recheck
 :Error_List
 
 :R01
+Set Error_Reason=Mount Was not Launched
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.logs%
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.Errors%
 set reply=Fatal Error
 call reply.bat
-Set reply=Mount Was not Launched
+set reply=%Error_Reason%
 call reply.bat
 set /p run_mount=Would you Like to run Mount?(Yes / No) =
 echo %run_mount%|findstr /i "Y" 
@@ -35,11 +38,37 @@ exit
 goto :Clean
 
 :R02
-set reply=Error Launcher Crashed
+Set Error_Reason=Error Launcher Crashed
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.logs%
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.Errors%
+set reply=%Error_Reason%
+call reply.bat
 pause
 goto :clean
+
+
 :R03
+Set Error_Reason=Error Keanu Logic is obselete
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.logs%
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.Errors%
+Set reply=%Error_Reason%
+call reply.bat
+:R03_Q
+Echo Press Y to use a new Launcher
+Echo Press N to close
+Set /p Action=Select action Y/N :
+if /I %Action%=="Y" goto :R03_Y
+if /I %Action%=="N" goto :R03_N
+cls
+goto :R03_Q
+:R03_Y
+Keanu.bat
+:R03_N
+keanu.exit.bat
 goto :clean
+
+
+
 :R04
 goto :clean 
 

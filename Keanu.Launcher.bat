@@ -40,22 +40,22 @@ echo %Use_Admin%|findstr /i "on"
 if %errorlevel% equ 0 goto :Set_Admin
 echo %Use_Admin%|findstr /i "Yes"
 if %errorlevel% equ 0 goto :Set_Admin
-echo %USe_Admin%|findstr /i "True"
+echo %Use_Admin%|findstr /i "True"
 if %errorlevel% equ 0 goto :Set_Admin
 echo %Use_Pre_User%|findstr /i "on"
-if %errorlevel% equ 0 goto :Set_Admin
+if %errorlevel% equ 0 goto :Pre_User
 echo %Use_Pre_User%|findstr /i "Yes"
-if %errorlevel% equ 0 goto :Set_Admin
+if %errorlevel% equ 0 goto :Pre_User
 echo %Use_Pre_User%|findstr /i "True"
-if %errorlevel% equ 0 goto :Set_Admin
+if %errorlevel% equ 0 goto :Pre_User
 goto :Stage_1
 :Set_Admin
 Set /P User=<Keanu.Adm.txt
-goto :Stage_5
+goto :Stage_1
 
 :Pre_User
 Set user=%Pre_User%
-goto :Stage_5
+goto :Stage_1
 
 :Stage_1
 :Launcher_Question
@@ -71,16 +71,16 @@ echo %keanu.date.time% [Keanu.Main] calling [keanu.logo.bat] >>%access.logs%
 call keanu.logo.bat
 echo %keanu.date.time% [Keanu.Main] calling [keanu.version.bat] >>%access.logs%
 call keanu.version.bat
-if /I "%Q01%" EQU "Yes" goto :loading
-if /I "%Q01%" EQU "Y" goto :loading
+if /I "%Q01%" EQU "Yes" goto :Stage_1.5
+if /I "%Q01%" EQU "Y" goto :Stage_1.5
 if /I "%Q01%" EQU "No" goto :nolaunch
 if /I "%Q01%" EQU "N" goto :nolaunch
 if /I "%Q01%" EQU "Exit" goto :nolaunch
 if /I "%Q01%" EQU "E" goto :nolaunch
 if /I "%Q01%" EQU "S" goto :startpage
 if /I "%Q01%" EQU "MM" goto :MasterMode
-if /I "%Q01%" EQU "L" goto :Logic
-if /I "%Q01%" EQU "Logic" goto :Logic
+REM if /I "%Q01%" EQU "L" goto :Logic
+REM if /I "%Q01%" EQU "Logic" goto :Logic
 set /P Q01=Hi ,Should i Launch KEANU Systems [Yes/No]?
 Echo %keanu.date.time% User: launch? User_Input = %Q01% >>%access.logs%
 goto :Launcher_Question
@@ -99,12 +99,11 @@ if /i "%name%"=="%%a" (
 set reply=%%b
 call reply.bat
 set user=%%a
-REM call keanu.pause
+timeout /t 3
 cls
 goto :Stage_2
 )
 )
-
 
 Echo sorry Your name is not Registered /No User Entered
 set /p name= Enter User :
@@ -114,6 +113,21 @@ goto :User
 set reply=Setup New User
 call reply.bat
 set /p NU="New UserName: "
+REM if /i "%NU%"=="What time is it?" goto :TIME
+for /f "tokens=1,* delims={" %%a in (Keanu.LogicData.Users.txt) do (
+
+if /i "%NU%"=="%%a" (
+Set reply=User Already Exists
+call reply.bat
+goto :User
+)
+)
+set /p WM=%BotName%: Your Welcome Message?
+echo %NU%{echo %WM%>>Keanu.LogicData.Users.txt
+Set reply=Thanks! USer %WM% Registered
+call reply.bat
+goto :User
+
 
 :start01
 Echo Launch _KEANU_ ?
@@ -147,12 +161,16 @@ if %errorlevel% equ 0 goto :Stage_4
 echo %MM%|findstr /i "True"
 if %errorlevel% equ 0 goto :Stage_4
 Echo KEANU_LOGIC starting
-echo %keanu.date.time% calling [keanu.logic.bat] >>%access.logs%
+echo %keanu.date.time% User:%user% calling [keanu.logic.Main.Start] >>%access.logs%
 Keanu.Logic.bat
+keanu.logic.Main.Start.bat
 goto :Error
 
 :Stage_4
 :MasterMode
+Set reply= MasterMode is currently obselete
+call reply.bat
+goto :Stage_1
 Echo Creator mode being started
 echo %keanu.date.time% Creator mode being started >>%access.logs%
 echo %keanu.date.time% Calling [CreatorMode.bat] >>%access.logs%
@@ -164,6 +182,7 @@ goto :Error
 
 :Stage_5
 :Fast_Keanu
+echo %keanu.date.time% Fast_Keanu Used by %Process.name% >>%access.logs%
 cls
 cd K:\
 if %
@@ -190,6 +209,10 @@ call Keanu.location.bat
 keanu.Exit.bat
 pause
 
+:OwnName
+Set reply=that your own name
+call reply.bat
+goto :Logic
 
 :Error
 set Error_List=R02
