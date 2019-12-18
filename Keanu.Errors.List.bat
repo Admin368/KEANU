@@ -14,6 +14,20 @@ goto :clean
 )
 goto :Recheck
 
+goto :No_error
+
+:R_sample
+::Dont forget to write the R Q,Y & N
+Set Error_Reason=
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.logs%
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.Errors%
+Set reply=%Error_Reason%
+call reply.bat
+goto :RGn_Q
+goto :clean 
+
+
+
 :Error_List
 
 :R01
@@ -70,6 +84,23 @@ goto :clean
 
 
 :R04
+Set Error_Reason=Mount Failed Local and Net Server not found
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.logs%
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.Errors%
+Set reply=%Error_Reason%
+call reply.bat
+:R04_Q
+Set /p Action=Relaunch? Y/N :
+if /I %Action%=="Y" goto :R04_Y
+if /I %Action%=="N" goto :R04_N
+cls
+goto :R04_Q
+:R04_Y
+Keanu.bat
+:R04_N
+keanu.exit.bat
+pause
+call keanu.exit
 goto :clean 
 
 :Recheck
@@ -93,7 +124,56 @@ goto :Error_check
 )
 goto :No_error
 
+:R05
+::Dont forget to write the R Q,Y & N
+Set Error_Reason=Old Mount Used
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.logs%
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.Errors%
+Set reply=%Error_Reason%
+call reply.bat
+:R05_Q
+Set /p Action=Relaunch? Y/N :
+if /I %Action%=="Y" goto :R05_Y
+if /I %Action%=="N" goto :R05_N
+cls
+goto :R05_Q
+:R05_Y
+Keanu.bat
+:R05_N
+keanu.exit.bat
+pause
+call keanu.exit
+goto :clean 
 
+
+:R06
+::Dont forget to write the R Q,Y & N
+Set Error_Reason=Launcher not used
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.logs%
+echo Fatal Error %error_list%  %Error_Reason% >>%Access.Errors%
+Set reply=%Error_Reason%
+call reply.bat
+goto :RGn_Q
+goto :clean 
+:R07
+:R08
+:R09
+:R10
+
+
+:RGn_Q
+Set /p Action=Relaunch? Y/N :
+if /I %Action%=="Y" goto :RGn_Y
+if /I %Action%=="N" goto :RGn_N
+cls
+goto :RGn_Q
+:RGn_Y
+Keanu.bat
+:RGn_N
+keanu.exit.bat
+pause
+call keanu.exit
+goto :clean 
 
 :No_error
 Echo No Such Error Was Found
