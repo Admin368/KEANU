@@ -20,7 +20,7 @@ set /p Version=<keanu.version.txt
 Set Debug=ON
 :: Debug options (ON / OFF)
 
-
+REM if /i %Debug%==ON goto :Main_Config
 :Keanu_config_Auto
 Set Botname=%Keanu_Name%
 Set /P Debug=Debug :
@@ -31,8 +31,8 @@ if %errorlevel% equ 0 (set Debug=OFF)
 
 
 
-
 :Main_Config
+@echo %debug%
 Set Home_SSID=The_Tower
 Set Main_Server_IP=192.168.1.168
 Set Main_Server_Dir=C:\Keanu
@@ -82,7 +82,7 @@ Set Hassio_IP=192.168.1.100
 set Hassio_Port=8123
 Set Hassio_Mqtt_Port=1883
 Set Hassio_Mqtt=%Hassio_Mqtt_Port%
-Set Hassio_Mqtt_Topic_General=
+Set Hassio_Mqtt_Topic_General=Keanu_General
 Set Hassio_MQTT.Topic=%Hassio_Mqtt_Topic_General%
 Set Hassio_MQTT_Topic=%Hassio_Mqtt_Topic_General%
 
@@ -91,18 +91,18 @@ Set PC1_Name=192.168.1.168
 Set PC1_IP=Server68
 Set PC2_Name=Legend_T3
 Set PC2_IP=192.168.1.
-Set PC3_Name=
-Set PC3_IP=Jey_PC
+Set PC3_Name=Jey_PC
+Set PC3_IP=
 Set PC4_Name=
 Set PC4_IP=
 
 
 :Phone_Config
-Set Phone_Master=
-:: Phone matser as to be name of any of the below phones
+Set Phone_Master=Phone1
+:: Phone master as to be name of any of the below phones
+::eg Phone1
 
-
-Set Phone1_Name=
+Set Phone1_Name=South_iphone
 Set Phone1_IP=
 
 Set Phone2_Name=
