@@ -55,10 +55,13 @@ Netsh WLAN show interfaces >Temp.Ip.txt
 >nul type Temp.ip.txt|findstr /i "%Home_SSID%"
 if %errorlevel% equ 0 (
 goto :Mount_Network_Main_New
+del /F /Q Temp.ip.txt >nul 2>nul
 )
 if %errorlevel% equ 1 (
 goto :Mount_Local_Dir
+del /F /Q Temp.ip.txt >nul 2>nul
 )
+del /F /Q Temp.ip.txt >nul 2>nul
 goto :Mount_error
 
 
