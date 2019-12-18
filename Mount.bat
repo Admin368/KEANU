@@ -1,4 +1,4 @@
-@echo %Debug%
+@echo off
 set Caller=%Process.Name%
 set Process.Name=Keanu.Mount_Essesntials
 set Mount_Used=Yes
@@ -6,27 +6,16 @@ set Mount_Used=Yes
 :Launcher_check
 echo %Launcher?%|findstr /i "Yes"
 if %errorlevel% equ 0 (
-goto :unMount
+goto :Mount_Essesntials
 )
 Echo Launcher not Used
 Set Error_list=R06
 Error_list.bat
 goto :Mount_error
 
-:unMount
-Echo Unmounting Process
-pause
-goto :Mount_Essesntials
-
-subst K: /D
-subst H: /D
-subst J: /D
-goto :Mount_Essesntials
-
 
 :Mount_Essesntials
 Echo Mounting Mount_Essesntials
-pause
 call Keanu.config.bat
 call keanu.Request.Admin.bat
 call keanu.data.time.bat
@@ -47,7 +36,6 @@ set Access.Error= "H:\Keanu.Acess.Logs\%Keanu.date.time%Fatal.txt"
 set Access.Error= "H:\Keanu.Aces.Logs\%Keanu.date.time%Fatal.txt"
 
 :Mount_Locations
-echo
 Echo Checking if in home Network
 Echo Checking if in home Network >>%access.logs%
 
@@ -66,12 +54,27 @@ goto :Mount_error
 
 
 :Mount_Network_Main_new
+:unMount
+@echo on
+cls
+Echo Unmounting Process continue?
+cd /D %Local_dir%
+pause
+REM goto :Mount_Essesntials
+subst K: /D >nul 2>nul
+subst H: /D >nul 2>nul
+subst J: /D >nul 2>nul
+echo Unmount done
+pause
+cls
+@echo off
+
 Set Mount_Type=Network_new
 subst K: \\%Main_Server_IP%\Keanu
 subst H: \\%Main_Server_IP%\keanu.Heavy
 subst J: \\%Main_Server_IP%\Projects\Django.Dev
 
-
+cd /d K:\
 
 :Mount_Network_Main_old
 Set Mount_Type=Network_Old
@@ -81,15 +84,42 @@ net use J: \\%Main_Server_IP%\Projects\Django.Dev
 goto :Mounted
 
 :Mount_Local_Dir
+echo Local
+pause
+:unMount
+
+@echo on
+cls
+Echo Unmounting Process continue?
+REM cd /D %Local_dir%
+cd /d C:\
+pause
+REM goto :Mount_Essesntials
+
+
+
+echo Unmount done
+pause
+cls
+@echo off
 Set Mount_Type=Local
 Echo you are Currently not in your Home Network
 timeout /t 4
 Set reply=Launching Local Keanu
-call reply.bat
+REM call reply.bat
 
 subst K: %Local_PC_Dir%
+if %errorlevel% equ 1 (
+subst K: /d >nul 2>nul
+)
 subst H: %Local_PC_Heavy%
+if %errorlevel% equ 1 (
+subst H: /d >nul 2>nul
+)
 subst J: %Local_PC_Projects%
+if %errorlevel% equ 1(
+subst J: /d >nul 2>nul
+)
 goto :Mounted
 
 
@@ -110,7 +140,7 @@ net use J: \\127.0.0.1\keanu\Projects\Django.Dev >nul 2>nul
 :Mounted
 REM net share Keanu=%Local_Dir% /GRANT:Everyone,FULL
 K:
-cd K:\
+cd /d K:\
 
 :Mount_Logs
 echo ############################### >>%access.logs%
