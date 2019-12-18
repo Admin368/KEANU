@@ -21,7 +21,6 @@ Set Fast_Keanu=No
 Set Use_Admin=No
 Set Use_Pre_User=No
 Set Pre_User=None
-call Keanu.Launcher.bat
 
 :Launcher_Essentials
 call mount.bat
@@ -90,7 +89,7 @@ goto :Launcher_Question
 :Stage_1.5
 :User
 Set Name=%User%
-
+:User_2
 if /i "%name%"=="N" goto :Newuser
 
 for /f "tokens=1,* delims={" %%a in (Keanu.LogicData.Users.txt) do (
@@ -107,7 +106,7 @@ goto :Stage_2
 
 Echo sorry Your name is not Registered /No User Entered
 set /p name= Enter User :
-goto :User
+goto :User_2
 
 :NewUser
 set reply=Setup New User
@@ -162,7 +161,7 @@ echo %MM%|findstr /i "True"
 if %errorlevel% equ 0 goto :Stage_4
 Echo KEANU_LOGIC starting
 echo %keanu.date.time% User:%user% calling [keanu.logic.Main.Start] >>%access.logs%
-Keanu.Logic.bat
+REM Keanu.Logic.bat
 keanu.logic.Main.Start.bat
 goto :Error
 
@@ -170,7 +169,8 @@ goto :Error
 :MasterMode
 Set reply= MasterMode is currently obselete
 call reply.bat
-goto :Stage_1
+REM goto :Stage_1
+timeout /t
 Echo Creator mode being started
 echo %keanu.date.time% Creator mode being started >>%access.logs%
 echo %keanu.date.time% Calling [CreatorMode.bat] >>%access.logs%
@@ -189,8 +189,9 @@ if %
 cls
 Echo KEANU (C) 2019 107_Studios
 Echo Fast_Keanu_Prompt
-call Keanu.Logic.Main.bat
-
+Echo Mount type: %Mount_type%
+Keanu.Logic.Main.bat
+goto :Error
 
 :startpage
 echo What Can I Do For You?
