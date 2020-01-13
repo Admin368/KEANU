@@ -1,0 +1,5 @@
+-keanu python voice (Keanu_pyvoice)
+-keanu auto config update
+-keanu update log plus addition on version model
+-replace reply.bat with keanu gTTs script
+-allow launch from keanu not from launch keanu
