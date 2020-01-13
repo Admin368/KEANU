@@ -13,7 +13,11 @@ set Seconds=%time:~6,2%
 set Nano.Seconds=%time:~9,2%
 
 
-set Keanu.Date.Time=%Year%_%Month%_%Day%-%Hour%;%Minutes%_%Seconds%
-set Keanu.Time.Date=%Year%_%Month%_%Day%-%Hour%;%Minutes%_%Seconds%
+Rem set Keanu.Date.Time=%Year%_%Month%_%Day%-%Hour%;%Minutes%_%Seconds%
+REm set Keanu.Time.Date=%Year%_%Month%_%Day%-%Hour%;%Minutes%_%Seconds%
+set Keanu.Date.Time=%Year%(%Month%_%Day%-%Hour%;%Minutes%_%Seconds%)
+set Keanu.Time.Date=%Year%(%Month%_%Day%-%Hour%;%Minutes%_%Seconds%)
+
+
 set Keanu.Date=%Year%_%Month%_%Day%
 set Keanu.Time=%Hour%;%Minutes%_%Seconds%

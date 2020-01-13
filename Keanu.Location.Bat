@@ -1,4 +1,5 @@
 @echo %debug%
+Echo Location Service starting
 :Check_Mount
 if %Mount_Used%==Yes goto :Location
 
@@ -33,4 +34,5 @@ set Process.Name=%Process.Name.Default%
 
 title %Keanu_NAme% %Version% Process [%Process.Name%]
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@LOCATION.END@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ >>%access.logs%
+Echo Location Service Exiting
 :EOF

@@ -18,7 +18,7 @@ goto :Mount_error
 Echo Mounting Mount_Essesntials
 call Keanu.config.bat
 call keanu.Request.Admin.bat
-call keanu.data.time.bat
+call keanu.date.time.bat
 
 :Mount_Varaibles
 set Access.logs= "H:\Keanu.Access.Logs\%Keanu.date.time%.txt"
@@ -55,27 +55,31 @@ goto :Mount_error
 
 :Mount_Network_Main_new
 :unMount
-@echo on
 cls
 Echo Unmounting Process continue?
+timeout /t 3
 cd /D %Local_dir%
-pause
 REM goto :Mount_Essesntials
-subst K: /D >nul 2>nul
-subst H: /D >nul 2>nul
-subst J: /D >nul 2>nul
-echo Unmount done
-pause
 cls
-@echo off
-
 Set Mount_Type=Network_new
+cls
+cd /d C:\
+goto :Mounted
 subst K: \\%Main_Server_IP%\Keanu
+if %errorlevel% equ 1 (
+subst K: /d >nul 2>nul
+subst K: \\%Main_Server_IP%\Keanu
+)
 subst H: \\%Main_Server_IP%\keanu.Heavy
-subst J: \\%Main_Server_IP%\Projects\Django.Dev
-
-cd /d K:\
-
+if %errorlevel% equ 1 (
+subst H: /d >nul 2>nul
+subst H: \\%Main_Server_IP%\keanu.Heavy
+)
+subst J: \\%Main_Server_IP%\Projects\
+if %errorlevel% equ 1 (
+subst J: /d >nul 2>nul
+subst J: \\%Main_Server_IP%\Projects\
+)
 :Mount_Network_Main_old
 Set Mount_Type=Network_Old
 net use K: \\%Main_Server_IP%\Keanu
@@ -84,42 +88,37 @@ net use J: \\%Main_Server_IP%\Projects\Django.Dev
 goto :Mounted
 
 :Mount_Local_Dir
-echo Local
-pause
-:unMount
-
-@echo on
-cls
-Echo Unmounting Process continue?
-REM cd /D %Local_dir%
-cd /d C:\
-pause
-REM goto :Mount_Essesntials
-
-
-
-echo Unmount done
-pause
-cls
-@echo off
-Set Mount_Type=Local
 Echo you are Currently not in your Home Network
-timeout /t 4
+Cls
+echo Mounting Local
+:UnMount_Local
+Echo Unmounting Process continue?
+timeout /t 2
+cd /D C:\
+Echo UnMounting Local done
+Set Mount_Type=Local
+timeout /t 2
+Echo Launching Local Keanu
 Set reply=Launching Local Keanu
 REM call reply.bat
 
 subst K: %Local_PC_Dir%
 if %errorlevel% equ 1 (
 subst K: /d >nul 2>nul
+subst K: %Local_PC_Dir%
 )
 subst H: %Local_PC_Heavy%
 if %errorlevel% equ 1 (
 subst H: /d >nul 2>nul
+subst H: %Local_PC_Heavy%
 )
 subst J: %Local_PC_Projects%
-if %errorlevel% equ 1(
+if %errorlevel% equ 1 (
 subst J: /d >nul 2>nul
+subst J: %Local_PC_Projects%
 )
+Echo mounting Local Done
+timeout /t 2
 goto :Mounted
 
 
@@ -170,6 +169,11 @@ Echo ===============================KEANU.CONFIG.END========================== >
 :FullScreen
 echo %FullScreen%|findstr /i "Yes"
 if %errorlevel% equ 0 (
+goto FullScreen_On
+)
+goto :FullScreen_Off
+
+:FullScreen_On
 cls
 echo %keanu.date.time% Adjusting View To Full Screen >>%access.logs%
 CLS
@@ -177,10 +181,9 @@ REM mode con lines=32766
 Echo %keanu.date.time% User:%user% Support_Process [Keanu.FullScreen] Was Called by [Keanu.Main]>>%access.logs%
 call FULLSCREEN.BAT
 REM mode con:cols=80 lines=100
-)
 
-
-
+:FullScreen_Off
+echo %keanu.date.time% Full Screen Option in config was "off" >>%access.logs%
 
 :Last
 K:
@@ -188,4 +191,8 @@ cd K:\
 
 
 Set Mount_Finished=Yes
+Echo Mounting Done
+Echo Exiting Mount
+cls
+timeout \t 2
 :EOF

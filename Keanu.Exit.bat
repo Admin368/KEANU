@@ -13,4 +13,8 @@ echo Keanu Shutting Down
 
 echo Keanu Exiting Now %keanu.date.time% >>%Access.logs%
 timeout /t 3
+Cd /d C:\Keanu.Config
+subst K: /D >nul 2>nul
+subst H: /D >nul 2>nul
+subst J: /D >nul 2>nul
 exit

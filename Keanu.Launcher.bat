@@ -1,4 +1,5 @@
 @echo off
+set Q01=None
 if %launcher?%==Yes goto :Launcher_Essentials
 goto :Launcher_Variables
 
@@ -202,7 +203,7 @@ pause
 goto :EOF
 
 :nolaunch
-set reply=Echo KEANU Was Not Launched
+set reply=KEANU Was Not Launched
 call reply.bat
 echo %keanu.date.time% KEANU Was Not Launched [keanu.Exit] >>%access.logs%
 echo %keanu.date.time% KEANU calling [keanu.Exit] >>%access.logs%
