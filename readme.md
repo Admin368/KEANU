@@ -73,3 +73,5 @@ Features to Work on:
 - write keanu update and install script that uses Git and has changes value (have auto version Checker)
 
     - make installl script -add git in essentials in installation
+    - add making of Keanu.Config in Env variables
+    - auto prompting config files
