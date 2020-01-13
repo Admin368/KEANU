@@ -6,18 +6,18 @@ There is 1 interface on the system:
     GUID                   : 73b51b1b-9dae-4d97-a3d0-83e333c22b75
     Physical address       : 74:de:2b:67:e0:18
     State                  : connected
-    SSID                   : UESTC-WiFi
-    BSSID                  : 2c:c5:d3:04:fd:68
+    SSID                   : The_Tower
+    BSSID                  : 30:fc:68:c5:3a:8b
     Network type           : Infrastructure
     Radio type             : 802.11n
-    Authentication         : Open
-    Cipher                 : None
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
     Connection mode        : Profile
-    Channel                : 6
+    Channel                : 11
     Receive rate (Mbps)    : 300
-    Transmit rate (Mbps)   : 72
-    Signal                 : 96% 
-    Profile                : UESTC-WiFi 
+    Transmit rate (Mbps)   : 150
+    Signal                 : 100% 
+    Profile                : The_Tower 
 
     Hosted network status  : Not available
 
