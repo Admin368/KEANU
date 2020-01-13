@@ -2,6 +2,7 @@
 set Caller=%Process.Name%
 set Process.Name=Keanu.Mount_Essesntials
 set Mount_Used=Yes
+cd /d %local_Dir%
 
 :Launcher_check
 echo %Launcher?%|findstr /i "Yes"
@@ -54,21 +55,7 @@ goto :Mount_error
 
 
 :Mount_Network_Main_new
-:unMount
-@echo on
-cls
-Echo Unmounting Process continue?
-cd /D %Local_dir%
-pause
-REM goto :Mount_Essesntials
-subst K: /D >nul 2>nul
-subst H: /D >nul 2>nul
-subst J: /D >nul 2>nul
-echo Unmount done
-pause
-cls
-@echo off
-
+call unmount.bat
 Set Mount_Type=Network_new
 subst K: \\%Main_Server_IP%\Keanu
 subst H: \\%Main_Server_IP%\keanu.Heavy
@@ -84,24 +71,8 @@ net use J: \\%Main_Server_IP%\Projects\Django.Dev
 goto :Mounted
 
 :Mount_Local_Dir
-echo Local
-pause
-:unMount
-
-@echo on
-cls
-Echo Unmounting Process continue?
-REM cd /D %Local_dir%
-cd /d C:\
-pause
-REM goto :Mount_Essesntials
-
-
-
-echo Unmount done
-pause
-cls
-@echo off
+Echo Local
+call unmount.bat
 Set Mount_Type=Local
 Echo you are Currently not in your Home Network
 timeout /t 4
