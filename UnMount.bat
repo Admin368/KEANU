@@ -57,8 +57,8 @@ Set /a E=%E%+1
 
 
 :Rz
-Echo E = %E% out of 4
-Echo M = %M% out of 4
+Echo E (Error UnMounting) = %E% out of 4
+Echo UM (UnMounted)       = %M% out of 4
 if /i %E%==4 Set Mounted=None
 if /i %Mounted%==None (
 echo No Drive Are Mounted
