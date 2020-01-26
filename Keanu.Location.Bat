@@ -11,6 +11,7 @@ goto No_Mount_New
 :Action_Mount
 cls
 @echo off
+Echo Service : Location.bat
 Echo FATAL ERROR : MOUNT NOT USED
 Echo Enter "E" to Exit
 Echo Enter "C" to Continue
@@ -52,7 +53,8 @@ goto :Run_Once_Code
 :Run_Once_Code
 set Run_Once=Yes
 :: put any commands you wanna run once here
-::Run_Once#01_FullScreen
+:Run_Once_01
+::Run_Once_01_FullScreen
 :FullScreen
 cls
 if /i "%FullScreen%" equ "Yes" goto :FullScreen_On
@@ -65,14 +67,21 @@ REM mode con lines=32766
 Echo %keanu.date.time% User:%user% Support_Process [Keanu.FullScreen] Was Called by [Keanu.Main]>>%access.logs%
 call FULLSCREEN.BAT
 REM mode con:cols=80 lines=100
-goto :Location_Main
+goto :Run_Once_02
 :FullScreen_Off
 echo %keanu.date.time% Full Screen Option in config was "off" >>%access.logs%
-goto :Location_Main
-::Run_Once#02_
+goto :Run_Once_02
+
+:Run_Once_02
+::Run_Once_02_
 
 
+
+:Run_Once_End
 ::END_OF_RUNONCE
+goto :Location_Main
+
+
 :Location_Main
 
 :Location_Log
