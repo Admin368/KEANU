@@ -1,3 +1,13 @@
-There is no wireless interface on the system.
-    Hosted network status  : Not available
+
+There is 1 interface on the system: 
+
+    Name                   : Wi-Fi
+    Description            : Realtek RTL8188CU Wireless LAN 802.11n USB 2.0 Network Adapter
+    GUID                   : 9d7a01b8-067c-40f5-b728-44039f7da409
+    Physical address       : 00:e0:4d:0d:10:c0
+    State                  : disconnected
+    Radio status           : Hardware On
+                             Software On
+
+    Hosted network status  : Not started
 
