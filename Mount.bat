@@ -38,7 +38,6 @@ set Access.Error= "H:\Keanu.Aces.Logs\%Keanu.date.time%Fatal.txt"
 
 :Mount_Locations
 Echo Checking if in home Network
-Echo Checking if in home Network >>%access.logs%
 
 Netsh WLAN show interfaces >Temp.Ip.txt
 >nul type Temp.ip.txt|findstr /i "%Home_SSID%"
@@ -59,7 +58,6 @@ call unmount.bat
 Set Mount_Type=Network_new
 cls
 cd /d C:\
-goto :Mounted
 subst K: \\%Main_Server_IP%\Keanu
 if %errorlevel% equ 1 (
 subst K: /d >nul 2>nul
@@ -142,7 +140,7 @@ echo ############################### >>%access.logs%
 
 Echo ==============================MOUNT.LOG.START============================= >>%access.logs%
 Echo %keanu.date.time% Mount Was Started and Essesntial Processes Completed >>%access.logs%
-Echo %keanu.date.time% Caller     = %Caller% >>%access.logs%
+Echo %keanu.date.time% Caller     = %Caller% >>  %access.logs%
 Echo %keanu.date.time% Launcher   = %Launcher% >>%access.logs%
 Echo %keanu.date.time% Debug      = %Debug% >>%access.logs%
 Echo %keanu.date.time% Keanu_name = %keanu_name% >>%access.logs%
