@@ -57,12 +57,16 @@ goto :Mount_error
 
 :Mount_Network_Main_new
 Echo Networking Mounting
+Echo Launching Network Server Keanu
 timeout /1
 call unmount.bat
 Set Mount_Type=Network_new
 cls
 cd /d C:\
 Set MN=0
+Set reply=Launching Network Server Keanu
+REM call reply.bat
+
 
 ::MOUNTING_K
 Echo Mounting K:
@@ -161,13 +165,96 @@ net use J: \\%Main_Server_IP%\Projects\Django.Dev
 goto :Mounted
 
 :Mount_Local_Dir
-Echo Local Mounting
-pause
+goto :Mount_Local_Dir_New
+
+:Mount_Local_Dir_New
+Echo (New Method) Local Mounting 
+Echo (New Method) Launching Local Keanu 
+timeout /t 1
 call unmount.bat
-Set Mount_Type=Local
+Set Mount_Type=Local_New
+cls
+cd /d C:\
+Set MN=0
+Set reply=New Method Launching Local Keanu
+REM call reply.bat
+
+::MOUNTING_K
+Echo Mounting K:
+CD /d C:\
+::subst K: \\%Main_Server_IP%\Keanu
+subst K: %Local_PC_Dir%
+if %errorlevel% equ 0 Echo Mounting K Successful&&Set cls=yes
+if %errorlevel% equ 1 (
+Echo Error: Failed to Mount K
+set Mount_Er=Error
+set /a MN=%MN%+1
+Set Er_K=yes
+Set Er_K_Msg=Drive K %Local_PC_Dir% Failed to Mount
+::subst K: /d >nul 2>nul
+::subst K: \\%Main_Server_IP%\Keanu
 timeout /t 2
-Echo Launching Local Keanu
-Set reply=Launching Local Keanu
+)
+if /i "%cls%" equ "yes" cls
+set cls=none
+
+::MOUNTING_H
+Echo Mounting H:
+cd /d C:\
+::subst H: \\%Main_Server_IP%\keanu.Heavy
+subst H: %Local_PC_Heavy%
+if %errorlevel% equ 0 Echo Mounting H Successful&&Set cls=yes
+if %errorlevel% equ 1 (
+Echo Error: Failed to Mount H
+set Mount_Er=Error
+set /a MN=%MN%+1
+Set Er_H=Yes
+Set Er_H_Msg=Drive H %Local_PC_Heavy% Failed to Mount
+::subst H: /d >nul 2>nul
+::subst H: \\%Main_Server_IP%\keanu.Heavy
+timeout /t 1
+)
+if /i "%cls%" equ "yes" cls
+set cls=none
+
+::MOUNTING_J
+Echo Mounting J:
+cd /d C:\
+::subst J: \\%Main_Server_IP%\Projects
+subst J: %Local_PC_Projects%
+if %errorlevel% equ 0 Echo Mounting J Successful&&Set cls=yes
+if %errorlevel% equ 1 (
+Echo Error: Failed to Mount J
+set Mount_Er=Error
+set /a MN=%MN%+1
+Set Er_J=Yes
+Set Er_J_Msg=Drive J %Local_PC_Projects% Failed to Mount
+::subst J: /d >nul 2>nul
+::subst J: \\%Main_Server_IP%\Projects\
+timeout /t 2
+)
+if /i "%cls%" equ "yes" cls
+set cls=none
+
+::MOUNTING_END
+Echo %Mount_Er%|findstr /i "Error"
+if %errorlevel% equ 0 (
+goto :Action_Mount
+) >nul
+goto :Mounted
+
+
+
+:Mount_Local_Dir_old
+Echo (old Method) Local Mounting 
+Echo (old Method) Launching Local Keanu 
+timeout /t 1
+call unmount.bat
+Set Mount_Type=Local_Old
+cls
+cd /d C:\
+Set MN=0
+Set reply=Old Method Launching Local Keanu
 REM call reply.bat
 
 subst K: %Local_PC_Dir%
