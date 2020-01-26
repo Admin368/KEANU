@@ -58,21 +58,67 @@ call unmount.bat
 Set Mount_Type=Network_new
 cls
 cd /d C:\
+Set MN=0
+
+::MOUNTING_K
+Echo Mounting K:
+CD /d C:\
 subst K: \\%Main_Server_IP%\Keanu
 if %errorlevel% equ 1 (
-subst K: /d >nul 2>nul
-subst K: \\%Main_Server_IP%\Keanu
+Echo Error: Failed to Mount K
+set Mount_Er=Error
+set /a MN=%MN%+1
+Set Er_K=K Drive (%Main_Server_IP%\Keanu) Failed to Mount
+::subst K: /d >nul 2>nul
+::subst K: \\%Main_Server_IP%\Keanu
 )
+
+::MOUNTING_H
+Echo Mounting H:
+cd /d C:\
 subst H: \\%Main_Server_IP%\keanu.Heavy
 if %errorlevel% equ 1 (
-subst H: /d >nul 2>nul
-subst H: \\%Main_Server_IP%\keanu.Heavy
+Echo Error: Failed to Mount K
+set Mount_Er=Error
+set /a MN=%MN%+1
+Set Er_H=H Drive (%Main_Server_IP%\keanu.Heavy) Failed to Mount
+::subst H: /d >nul 2>nul
+::subst H: \\%Main_Server_IP%\keanu.Heavy
 )
+
+::MOUNTING_J
+Echo Mounting J:
+cd /d C:\
 subst J: \\%Main_Server_IP%\Projects\
 if %errorlevel% equ 1 (
-subst J: /d >nul 2>nul
-subst J: \\%Main_Server_IP%\Projects\
+Echo Error: Failed to Mount K
+set /a MN=%MN%+1
+Set Er_J=J Drive (%Main_Server_IP%\Projects) Failed to Mount
+::subst J: /d >nul 2>nul
+::subst J: \\%Main_Server_IP%\Projects\
 )
+
+::MOUNTING_END
+Echo %Mount_Er%|findstr /i "Error"
+if %errorlevel% equ 0 (
+goto :Action_Mount
+)
+goto :Mounted
+
+
+:Action_Mount
+Echo Some Drives failed to Mount
+Echo %MN% Drived Failed to Launch
+Echo %Er_K%
+Echo %Er_J%
+Echo %Er_H%
+Echo Enter "C" to Continue
+Echo Enter "R" to ReUnmount and Mount Agian
+set /p Action_Mount=Action to Do :
+if /I "%Action_Mount%" EQU "C" goto :Stage_1.5
+if /I "%Action_Mount%" EQU "R" goto :Mounted
+
+
 :Mount_Network_Main_old
 Set Mount_Type=Network_Old
 net use K: \\%Main_Server_IP%\Keanu
@@ -124,6 +170,12 @@ net share
 net use J: \\127.0.0.1\keanu\Projects\Django.Dev >nul 2>nul
 
 :Mounted
+cls
+if /i "%Mount_Er%" EQU "Error" (
+echo Some Drived Did not Mount
+timeout /t 1
+)
+Echo Mounted Completed
 REM net share Keanu=%Local_Dir% /GRANT:Everyone,FULL
 K:
 cd /d K:\
