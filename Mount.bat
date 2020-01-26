@@ -4,15 +4,26 @@ set Process.Name=Keanu.Mount_Essesntials
 set Mount_Used=Yes
 ::cd /d %local_Dir%
 
-
 :Launcher_check
 echo %Launcher?%|findstr /i "Yes"
 if %errorlevel% equ 0 (
 goto :Mount_Essesntials
 )
-Echo Launcher not Used
+:No_launcher
+cls
+Echo Service : Mount.bat
 Set Error_list=R06
-Error_list.bat
+::Error_list.bat
+Echo Error: %Error_list%
+Echo Error: Launcher not Used
+Echo Enter "E" to Exit
+Echo Enter "C" to Continue
+Echo Enter "L" to Use Default Launcher
+set /p Action_Mount=Action to Do :
+if /I "%Action_Mount%" EQU "C" goto :Mount_Essesntials
+if /I "%Action_Mount%" EQU "L" keanu.bat
+if /I "%Action_Mount%" EQU "E" call Keanu.exit.bat
+goto :No_launcher
 goto :Mount_error
 
 
@@ -140,7 +151,7 @@ if /i "%Er_H%" equ "Yes" Set /a AMN=%AMN%+1 >nul && Echo %AMN%.%Er_H_Msg%
 if /i "%Er_J%" equ "Yes" Set /a AMN=%AMN%+1 >nul && Echo %AMN%.%Er_J_Msg%
 Echo Enter "E" to Exit
 Echo Enter "C" to Continue
-Echo Enter "R" to Re_unmount and Mount Againn
+Echo Enter "R" to Re_unmount and Mount Again
 set /p Action_Mount=Action to Do :
 if /I "%Action_Mount%" EQU "C" goto :Mounted
 if /I "%Action_Mount%" EQU "R" goto :ReMount
