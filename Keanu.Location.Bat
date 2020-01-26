@@ -1,3 +1,4 @@
+Set Debug=On
 @echo %debug%
 Echo Location Service starting
 :Check_Mount
@@ -45,14 +46,33 @@ echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@LOCATION.START@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo %keanu.date.time% User:%user% Process [%Process.Name%] Started >>%access.logs%
 
 :Run_Once
-echo %Run_Once%|findstr /i "Yes"
-if %errorlevel% equ 0 (
-set Run_Once=Yes
+
+if /i "%Run_Once%" equ "Yes" goto :Location_Main
+goto :Run_Once_Code
 :Run_Once_Code
+set Run_Once=Yes
 :: put any commands you wanna run once here
+::Run_Once#01_FullScreen
+:FullScreen
+cls
+if /i "%FullScreen%" equ "Yes" goto :FullScreen_On
+goto :FullScreen_Off
+:FullScreen_On
+cls
+echo %keanu.date.time% Adjusting View To Full Screen >>%access.logs%
+cls
+REM mode con lines=32766
+Echo %keanu.date.time% User:%user% Support_Process [Keanu.FullScreen] Was Called by [Keanu.Main]>>%access.logs%
+call FULLSCREEN.BAT
+REM mode con:cols=80 lines=100
+goto :Location_Main
+:FullScreen_Off
+echo %keanu.date.time% Full Screen Option in config was "off" >>%access.logs%
+goto :Location_Main
+::Run_Once#02_
 
-)
 
+::END_OF_RUNONCE
 :Location_Main
 
 :Location_Log

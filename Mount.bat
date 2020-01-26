@@ -147,7 +147,7 @@ if /I "%Action_Mount%" EQU "R" goto :ReMount
 if /I "%Action_Mount%" EQU "E" call Keanu.exit.bat
 Echo incorrect option Selected
 cls
-goto :Action_Mount
+
 
 :ReMount
 Echo Remounting
@@ -327,25 +327,6 @@ type Keanu.Config.bat >>%access.logs%
 Echo ===============================KEANU.CONFIG.END========================== >>%access.logs%
 
 
-:FullScreen
-cls
-echo %FullScreen%|findstr /i "Yes"
-if %errorlevel% equ 0 (
-goto :FullScreen_On
-)
-goto :FullScreen_Off
-
-:FullScreen_On
-cls
-echo %keanu.date.time% Adjusting View To Full Screen >>%access.logs%
-CLS
-REM mode con lines=32766
-Echo %keanu.date.time% User:%user% Support_Process [Keanu.FullScreen] Was Called by [Keanu.Main]>>%access.logs%
-call FULLSCREEN.BAT
-REM mode con:cols=80 lines=100
-
-:FullScreen_Off
-echo %keanu.date.time% Full Screen Option in config was "off" >>%access.logs%
 
 :Last
 K:
