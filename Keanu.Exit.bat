@@ -13,8 +13,23 @@ echo Keanu Shutting Down
 
 echo Keanu Exiting Now %keanu.date.time% >>%Access.logs%
 timeout /t 3
+:Unmount
+
+:Unmount_New
+cls
+Echo Exit Service Unmounting Drives
+call unmount.bat
+goto :Exit
+
+:Unmount_Old
 Cd /d C:\Keanu.Config
 subst K: /D >nul 2>nul
 subst H: /D >nul 2>nul
 subst J: /D >nul 2>nul
+goto :Exit
+
+
+:Exit
 exit
+
+:OEF
