@@ -79,13 +79,16 @@ if /I "%Q01%" EQU "Exit" goto :nolaunch
 if /I "%Q01%" EQU "E" goto :nolaunch
 if /I "%Q01%" EQU "S" goto :startpage
 if /I "%Q01%" EQU "MM" goto :MasterMode
+if /I "%Q01%" EQU "Admin" goto :Post_Admin
 REM if /I "%Q01%" EQU "L" goto :Logic
 REM if /I "%Q01%" EQU "Logic" goto :Logic
 set /P Q01=Hi ,Should i Launch KEANU Systems [Yes/No]?
 Echo %keanu.date.time% User: launch? User_Input = %Q01% >>%access.logs%
 goto :Launcher_Question
 
-
+:Post_Admin
+Set /P User=<Keanu.Adm.txt
+goto :stage_1.5
 
 :Stage_1.5
 :User
@@ -137,6 +140,8 @@ if not defined ON goto loading
 
 :Stage_2
 :loading
+ Set /P Admin=<Keanu.Adm.txt
+ if /i "user"=="Admin" goto :Stage_3
 echo %Loading%|findstr /i "off"
 if %errorlevel% equ 0 goto :Stage_3
 echo %Loading%|findstr /i "No"
