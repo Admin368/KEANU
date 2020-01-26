@@ -7,7 +7,7 @@ There is 1 interface on the system:
     Physical address       : 00:e0:4d:0d:10:c0
     State                  : disconnected
     Radio status           : Hardware On
-                             Software On
+                             Software Off
 
     Hosted network status  : Not started
 
