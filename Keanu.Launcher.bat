@@ -25,6 +25,12 @@ Set Pre_User=None
 
 :Launcher_Essentials
 call mount.bat
+::Remove
+CLS
+Echo Back to Launch.Bat
+Echo Mount Worked Nicely
+pause
+::Remove
 title %Launcher% %Keanu_Name% %version%
 echo %keanu.date.time% %Launcher% calling [KeanuLocation.bat] >>%access.logs%
 call location.bat
