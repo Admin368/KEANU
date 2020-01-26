@@ -1,4 +1,4 @@
-Set Debug=On
+::Set Debug=On
 @echo %debug%
 Echo Location Service starting
 :Check_Mount
