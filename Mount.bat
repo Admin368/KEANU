@@ -57,7 +57,7 @@ goto :Mount_error
 
 :Mount_Network_Main_new
 Echo Networking Mounting
-pause
+timeout /1
 call unmount.bat
 Set Mount_Type=Network_new
 cls
