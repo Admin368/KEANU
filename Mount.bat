@@ -2,7 +2,8 @@
 set Caller=%Process.Name%
 set Process.Name=Keanu.Mount_Essesntials
 set Mount_Used=Yes
-cd /d %local_Dir%
+::cd /d %local_Dir%
+
 
 :Launcher_check
 echo %Launcher?%|findstr /i "Yes"
@@ -20,6 +21,7 @@ Echo Mounting Mount_Essesntials
 call Keanu.config.bat
 call keanu.Request.Admin.bat
 call keanu.date.time.bat
+cd /d %local_Dir%
 
 :Mount_Varaibles
 set Access.logs= "H:\Keanu.Access.Logs\%Keanu.date.time%.txt"
@@ -32,15 +34,15 @@ set Acces.log= "H:\Keanu.Access.Logs\%Keanu.date.time%.txt"
 set Access.Error= "H:\Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
 set Access.Errors= "H:\Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
 set Acess.Errors= "H:\Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "H:\Keanu.Acces.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "H:\Keanu.Acess.Logs\%Keanu.date.time%Fatal.txt"
-set Access.Error= "H:\Keanu.Aces.Logs\%Keanu.date.time%Fatal.txt"
+set Acess.Error= "H:\Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
+set Acces.Error= "H:\Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
+set Acces.Errors= "H:\Keanu.Access.Logs\%Keanu.date.time%Fatal.txt"
 
 :Mount_Locations
 Echo Checking if in home Network
 
 Netsh WLAN show interfaces >Temp.Ip.txt
->nul type Temp.ip.txt|findstr /i "%Home_SSID%"
+type Temp.ip.txt|findstr /i "%Home_SSID%"
 if %errorlevel% equ 0 (
 goto :Mount_Network_Main_New
 del /F /Q Temp.ip.txt >nul 2>nul
@@ -54,6 +56,8 @@ goto :Mount_error
 
 
 :Mount_Network_Main_new
+Echo Networking Mounting
+pause
 call unmount.bat
 Set Mount_Type=Network_new
 cls
@@ -64,59 +68,89 @@ Set MN=0
 Echo Mounting K:
 CD /d C:\
 subst K: \\%Main_Server_IP%\Keanu
+if %errorlevel% equ 0 Echo Mounting K Successful&&Set cls=yes
 if %errorlevel% equ 1 (
 Echo Error: Failed to Mount K
 set Mount_Er=Error
 set /a MN=%MN%+1
-Set Er_K=K Drive (%Main_Server_IP%\Keanu) Failed to Mount
+Set Er_K=yes
+Set Er_K_Msg=Drive K %Main_Server_IP%\Keanu Failed to Mount
 ::subst K: /d >nul 2>nul
 ::subst K: \\%Main_Server_IP%\Keanu
+timeout /t 2
 )
+if /i "%cls%" equ "yes" cls
+set cls=none
 
 ::MOUNTING_H
 Echo Mounting H:
 cd /d C:\
 subst H: \\%Main_Server_IP%\keanu.Heavy
+if %errorlevel% equ 0 Echo Mounting H Successful&&Set cls=yes
 if %errorlevel% equ 1 (
-Echo Error: Failed to Mount K
+Echo Error: Failed to Mount H
 set Mount_Er=Error
 set /a MN=%MN%+1
-Set Er_H=H Drive (%Main_Server_IP%\keanu.Heavy) Failed to Mount
+Set Er_H=Yes
+Set Er_H_Msg=Drive H %Main_Server_IP%\keanu.Heavy Failed to Mount
 ::subst H: /d >nul 2>nul
 ::subst H: \\%Main_Server_IP%\keanu.Heavy
+timeout /t 1
 )
+if /i "%cls%" equ "yes" cls
+set cls=none
 
 ::MOUNTING_J
 Echo Mounting J:
 cd /d C:\
-subst J: \\%Main_Server_IP%\Projects\
+subst J: \\%Main_Server_IP%\Projects
+if %errorlevel% equ 0 Echo Mounting J Successful&&Set cls=yes
 if %errorlevel% equ 1 (
-Echo Error: Failed to Mount K
+Echo Error: Failed to Mount J
+set Mount_Er=Error
 set /a MN=%MN%+1
-Set Er_J=J Drive (%Main_Server_IP%\Projects) Failed to Mount
+Set Er_J=Yes
+Set Er_J_Msg=Drive J %Main_Server_IP%\Projects Failed to Mount
 ::subst J: /d >nul 2>nul
 ::subst J: \\%Main_Server_IP%\Projects\
+timeout /t 2
 )
+if /i "%cls%" equ "yes" cls
+set cls=none
 
 ::MOUNTING_END
 Echo %Mount_Er%|findstr /i "Error"
 if %errorlevel% equ 0 (
 goto :Action_Mount
-)
+) >nul
 goto :Mounted
 
 
 :Action_Mount
-Echo Some Drives failed to Mount
-Echo %MN% Drived Failed to Launch
-Echo %Er_K%
-Echo %Er_J%
-Echo %Er_H%
+cls
+::Echo Some Drives failed to Mount
+Echo %MN% Drived Failed to Mount
+Set AMN=1
+if /i "%Er_K%" equ "Yes" Set /a AMN=%AMN%+1 >nul && Echo %AMN%.%Er_K_Msg%
+if /i "%Er_H%" equ "Yes" Set /a AMN=%AMN%+1 >nul && Echo %AMN%.%Er_H_Msg%
+if /i "%Er_J%" equ "Yes" Set /a AMN=%AMN%+1 >nul && Echo %AMN%.%Er_J_Msg%
+Echo Enter "E" to Exit
 Echo Enter "C" to Continue
-Echo Enter "R" to ReUnmount and Mount Agian
+Echo Enter "R" to Re_unmount and Mount Againn
 set /p Action_Mount=Action to Do :
-if /I "%Action_Mount%" EQU "C" goto :Stage_1.5
-if /I "%Action_Mount%" EQU "R" goto :Mounted
+if /I "%Action_Mount%" EQU "C" goto :Mounted
+if /I "%Action_Mount%" EQU "R" goto :ReMount
+if /I "%Action_Mount%" EQU "E" call Keanu.exit.bat
+Echo incorrect option Selected
+cls
+goto :Action_Mount
+
+:ReMount
+Echo Remounting
+timeout /t 3
+call unmount.bat
+call Mount.bat
+goto :Mounted
 
 
 :Mount_Network_Main_old
@@ -127,7 +161,8 @@ net use J: \\%Main_Server_IP%\Projects\Django.Dev
 goto :Mounted
 
 :Mount_Local_Dir
-Echo Local
+Echo Local Mounting
+pause
 call unmount.bat
 Set Mount_Type=Local
 timeout /t 2
@@ -206,9 +241,10 @@ Echo ===============================KEANU.CONFIG.END========================== >
 
 
 :FullScreen
+cls
 echo %FullScreen%|findstr /i "Yes"
 if %errorlevel% equ 0 (
-goto FullScreen_On
+goto :FullScreen_On
 )
 goto :FullScreen_Off
 
@@ -235,3 +271,4 @@ Echo Exiting Mount
 cls
 timeout \t 2
 :EOF
+cls
