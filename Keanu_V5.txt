@@ -3,3 +3,20 @@
 -keanu update log plus addition on version model
 -replace reply.bat with keanu gTTs script
 -allow launch from keanu not from launch keanu
+-Add delete gtts voice file after use
+-Add porcupine voice detection
+-Add voicemeter auto start
+-Seperate output of audio from main pc
+-redebug keaun launch
+-try and genelize audio output file (command.voice)
+-add pc control shortcuts form wizmo and nircmd
+-recheck quick keanu versions
+- improve load time
+
+
+
+
+#Speech
+-add disable tranning wheels protocol to allow major changes
+-add restart core system
+-try picotts with python

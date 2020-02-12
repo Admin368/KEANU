@@ -1,6 +1,7 @@
 @echo %Debug%
 REM set Process.Name=Keanu.Fullscreen
-call Keanu.location.bat
+Echo Setting FullScreen
+::call Keanu.location.bat
 Echo %keanu.date.time% User:%user% Support_Process [Keanu.FullScreen] Was Called >>%access.logs%
 
 :VBSDynamicBuild

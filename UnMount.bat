@@ -1,5 +1,6 @@
 @echo off
-cd /d %local_Dir%
+cd /d %local_Dir% >>nul 2>nul
+if %errorlevel% equ 1 cd /d C:\ && Echo Local_Keanu_Dir not found in Memory && Echo Using Dir : C:\
 set E=0
 Set M=0
 set Mounted=0
@@ -57,8 +58,8 @@ Set /a E=%E%+1
 
 
 :Rz
-Echo E = %E% out of 4
-Echo M = %M% out of 4
+Echo E (Error UnMounting) = %E% out of 4
+Echo UM (UnMounted)       = %M% out of 4
 if /i %E%==4 Set Mounted=None
 if /i %Mounted%==None (
 echo No Drive Are Mounted
@@ -66,4 +67,5 @@ echo No Drive Are Mounted
 Echo UnMounting Drives Done
 Echo %M% Drives Unmounted
 del /f /Q Mounted.txt
-cd /d %local_Dir%
+cd /d %local_Dir% >>nul 2>nul
+if %errorlevel% equ 1 cd /d C:\ && Echo Local_Keanu_Dir not found in Memory && Echo Using Dir : C:\

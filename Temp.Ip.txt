@@ -20,4 +20,3 @@ There is 1 interface on the system:
     Profile                : The_Tower 
 
     Hosted network status  : Not available
-
