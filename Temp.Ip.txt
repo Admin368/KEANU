@@ -12,8 +12,8 @@ There is 1 interface on the system:
     Radio type             : 802.11n
     Authentication         : WPA2-Personal
     Cipher                 : CCMP
-    Connection mode        : Profile
-    Channel                : 11
+    Connection mode        : Auto Connect
+    Channel                : 1
     Receive rate (Mbps)    : 300
     Transmit rate (Mbps)   : 150
     Signal                 : 100% 
