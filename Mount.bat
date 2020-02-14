@@ -23,6 +23,7 @@ set /p Action_Mount=Action to Do :
 if /I "%Action_Mount%" EQU "C" goto :Mount_Essesntials
 if /I "%Action_Mount%" EQU "L" keanu.bat
 if /I "%Action_Mount%" EQU "E" call Keanu.exit.bat
+
 goto :No_launcher
 goto :Mount_error
 
@@ -152,14 +153,21 @@ if /i "%Er_J%" equ "Yes" Set /a AMN=%AMN%+1 >nul && Echo %AMN%.%Er_J_Msg%
 Echo Enter "E" to Exit
 Echo Enter "C" to Continue
 Echo Enter "R" to Re_unmount and Mount Again
+Echo Enter "T" to Mount Temp in Keanu files
+Echo Enter "K" to make C:\Keanu.config
 set /p Action_Mount=Action to Do :
 if /I "%Action_Mount%" EQU "C" goto :Mounted
 if /I "%Action_Mount%" EQU "R" goto :ReMount
 if /I "%Action_Mount%" EQU "E" call Keanu.exit.bat
+if /I "%Action_Mount%" EQU "T" goto :Mount_Temp
+if /I "%Action_Mount%" EQU "K" call install.keanu_Config
 Echo incorrect option Selected
 cls
 
-
+:Mount_Temp
+Echo not set yet
+pause
+keanu.exe
 :ReMount
 Echo Remounting
 timeout /t 3

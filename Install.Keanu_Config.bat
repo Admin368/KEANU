@@ -1,5 +1,6 @@
-@echo %Debug%
-REM Set Process.Name=keanu.Request.Admin
+@echo on
+set Caller=%Process.Name%
+set Process.Name=Install.Keanu_Config
 
 :: BatchGotAdmin
 :-------------------------------------
@@ -28,4 +29,9 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
     pushd "%CD%"
     CD /D "%~dp0"
-:-------------------
+:--------------------------------------    
+copy Keanu.Config\ C:\Keanu.Config
+
+
+
+
