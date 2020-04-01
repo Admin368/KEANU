@@ -145,3 +145,6 @@ Set Camera2_IP=
 Set Camera2_Name=
 Set Camera2_IP=
 Set Camera2_Name=
+
+:ip_List
+call #ip_list#%SSID%#.bat
