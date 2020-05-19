@@ -1,5 +1,5 @@
 # KEANU
- First R rated , Ever Advancing Windows Batch File Artificial Intelligence (A.I.) with {MQTT,Hassio,Node.js,vbs script} functionality
+ First R rated , Ever Advancing Windows Batch File Chat Bot A.I. with {MQTT,Hassio,Node.js,vbs script} functionality
 
 Features to Work on:
 - xrof - CLoud based command line app
